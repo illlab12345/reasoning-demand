@@ -1,8 +1,7 @@
 # Sufficient Reasoning Demand: Difficulty, Capability, or Task Structure?
 
 Companion code and data for the manuscript
-*"Task structure—not difficulty alone—determines how much reasoning a language
-model needs"* (submitted to *Nature Machine Intelligence*).
+*"Task structure governs the inference cost of large language models"*.
 
 The project measures the **minimum reasoning a task requires** — the
 *sufficient reasoning demand* r\*\_ε: the least costly configured reasoning
