@@ -1,0 +1,663 @@
+{
+  "n_samples": 530,
+  "methods": {
+    "always_low": {
+      "accuracy": 0.4943,
+      "mean_reasoning_tokens": 5263.6,
+      "mean_cost_usd": 0.001521,
+      "mean_latency_ms": 96956.9,
+      "token_reduction_vs_max": 0.5393,
+      "accuracy_loss_vs_max": 0.0034
+    },
+    "always_high": {
+      "accuracy": 0.5015,
+      "mean_reasoning_tokens": 9797.3,
+      "mean_cost_usd": 0.0028,
+      "mean_latency_ms": 152417.9,
+      "token_reduction_vs_max": 0.1424,
+      "accuracy_loss_vs_max": -0.0038
+    },
+    "always_max": {
+      "accuracy": 0.4977,
+      "mean_reasoning_tokens": 11424.1,
+      "mean_cost_usd": 0.003259,
+      "mean_latency_ms": 140319.9,
+      "token_reduction_vs_max": -0.0,
+      "accuracy_loss_vs_max": 0.0
+    },
+    "stratum_router": {
+      "accuracy": 0.5113,
+      "mean_reasoning_tokens": 8968.9,
+      "mean_cost_usd": 0.002566,
+      "mean_latency_ms": 115170.8,
+      "token_reduction_vs_max": 0.2149,
+      "accuracy_loss_vs_max": -0.0136
+    },
+    "oracle_best": {
+      "accuracy": 0.5408,
+      "mean_reasoning_tokens": 5964.8,
+      "mean_cost_usd": 0.001723,
+      "mean_latency_ms": 68053.1,
+      "token_reduction_vs_max": 0.4779,
+      "accuracy_loss_vs_max": -0.043
+    },
+    "oracle_minimal": {
+      "accuracy": 0.5408,
+      "mean_reasoning_tokens": 5964.8,
+      "mean_cost_usd": 0.001723,
+      "mean_latency_ms": 68053.1,
+      "token_reduction_vs_max": 0.4779,
+      "accuracy_loss_vs_max": -0.043
+    },
+    "ml_router_cv": {
+      "accuracy": 0.4936,
+      "mean_reasoning_tokens": 6653.0,
+      "mean_cost_usd": 0.001917,
+      "mean_latency_ms": 96419.8,
+      "token_reduction_vs_max": 0.4176,
+      "accuracy_loss_vs_max": 0.0042
+    },
+    "ml_router_lodo": {
+      "accuracy": 0.4891,
+      "mean_reasoning_tokens": 6973.1,
+      "mean_cost_usd": 0.002008,
+      "mean_latency_ms": 120583.7,
+      "token_reduction_vs_max": 0.3896,
+      "accuracy_loss_vs_max": 0.0087
+    }
+  },
+  "per_domain": {
+    "always_low": {
+      "aime": {
+        "accuracy": 0.9667,
+        "mean_reasoning_tokens": 8262.3,
+        "mean_cost_usd": 0.002332,
+        "mean_latency_ms": 84309.8,
+        "token_reduction_vs_max": 0.5303,
+        "accuracy_loss_vs_max": 0.0,
+        "diff_vs_max": 0.0,
+        "diff_vs_max_ci_lo": -0.0158,
+        "diff_vs_high": 0.02,
+        "diff_vs_high_ci_lo": -0.0165
+      },
+      "easy2hard_amc": {
+        "accuracy": 0.75,
+        "mean_reasoning_tokens": 4599.8,
+        "mean_cost_usd": 0.001306,
+        "mean_latency_ms": 49771.8,
+        "token_reduction_vs_max": 0.541,
+        "accuracy_loss_vs_max": 0.014,
+        "diff_vs_max": -0.014,
+        "diff_vs_max_ci_lo": -0.0401,
+        "diff_vs_high": -0.032,
+        "diff_vs_high_ci_lo": -0.0528
+      },
+      "gpqa_diamond": {
+        "accuracy": 0.296,
+        "mean_reasoning_tokens": 11726.0,
+        "mean_cost_usd": 0.003305,
+        "mean_latency_ms": 347878.6,
+        "token_reduction_vs_max": 0.5168,
+        "accuracy_loss_vs_max": 0.002,
+        "diff_vs_max": -0.002,
+        "diff_vs_max_ci_lo": -0.0365,
+        "diff_vs_high": 0.042,
+        "diff_vs_high_ci_lo": 0.002
+      },
+      "livecodebench": {
+        "accuracy": 0.368,
+        "mean_reasoning_tokens": 4320.3,
+        "mean_cost_usd": 0.001331,
+        "mean_latency_ms": 42239.8,
+        "token_reduction_vs_max": 0.6851,
+        "accuracy_loss_vs_max": 0.004,
+        "diff_vs_max": -0.004,
+        "diff_vs_max_ci_lo": -0.0133,
+        "diff_vs_high": 0.01,
+        "diff_vs_high_ci_lo": -0.0043
+      },
+      "math500": {
+        "accuracy": 0.81,
+        "mean_reasoning_tokens": 826.3,
+        "mean_cost_usd": 0.000245,
+        "mean_latency_ms": 8060.2,
+        "token_reduction_vs_max": 0.5063,
+        "accuracy_loss_vs_max": -0.014,
+        "diff_vs_max": 0.014,
+        "diff_vs_max_ci_lo": -0.006,
+        "diff_vs_high": -0.026,
+        "diff_vs_high_ci_lo": -0.0456
+      },
+      "zebralogic_grid": {
+        "accuracy": 0.106,
+        "mean_reasoning_tokens": 3946.2,
+        "mean_cost_usd": 0.001177,
+        "mean_latency_ms": 40628.0,
+        "token_reduction_vs_max": 0.2935,
+        "accuracy_loss_vs_max": 0.012,
+        "diff_vs_max": -0.012,
+        "diff_vs_max_ci_lo": -0.0392,
+        "diff_vs_high": -0.038,
+        "diff_vs_high_ci_lo": -0.0622
+      }
+    },
+    "always_high": {
+      "aime": {
+        "accuracy": 0.9467,
+        "mean_reasoning_tokens": 11657.6,
+        "mean_cost_usd": 0.003294,
+        "mean_latency_ms": 114956.0,
+        "token_reduction_vs_max": 0.3373,
+        "accuracy_loss_vs_max": 0.02,
+        "diff_vs_max": -0.02,
+        "diff_vs_max_ci_lo": -0.0529,
+        "diff_vs_high": 0.0,
+        "diff_vs_high_ci_lo": 0.0
+      },
+      "easy2hard_amc": {
+        "accuracy": 0.782,
+        "mean_reasoning_tokens": 6410.4,
+        "mean_cost_usd": 0.001824,
+        "mean_latency_ms": 86269.2,
+        "token_reduction_vs_max": 0.3603,
+        "accuracy_loss_vs_max": -0.018,
+        "diff_vs_max": 0.018,
+        "diff_vs_max_ci_lo": -0.004,
+        "diff_vs_high": 0.0,
+        "diff_vs_high_ci_lo": 0.0
+      },
+      "gpqa_diamond": {
+        "accuracy": 0.254,
+        "mean_reasoning_tokens": 15771.1,
+        "mean_cost_usd": 0.004449,
+        "mean_latency_ms": 420023.5,
+        "token_reduction_vs_max": 0.3501,
+        "accuracy_loss_vs_max": 0.044,
+        "diff_vs_max": -0.044,
+        "diff_vs_max_ci_lo": -0.0819,
+        "diff_vs_high": 0.0,
+        "diff_vs_high_ci_lo": 0.0
+      },
+      "livecodebench": {
+        "accuracy": 0.358,
+        "mean_reasoning_tokens": 19620.8,
+        "mean_cost_usd": 0.005615,
+        "mean_latency_ms": 197146.1,
+        "token_reduction_vs_max": -0.4299,
+        "accuracy_loss_vs_max": 0.014,
+        "diff_vs_max": -0.014,
+        "diff_vs_max_ci_lo": -0.0304,
+        "diff_vs_high": 0.0,
+        "diff_vs_high_ci_lo": 0.0
+      },
+      "math500": {
+        "accuracy": 0.836,
+        "mean_reasoning_tokens": 890.2,
+        "mean_cost_usd": 0.000274,
+        "mean_latency_ms": 8583.2,
+        "token_reduction_vs_max": 0.4681,
+        "accuracy_loss_vs_max": -0.04,
+        "diff_vs_max": 0.04,
+        "diff_vs_max_ci_lo": 0.0166,
+        "diff_vs_high": 0.0,
+        "diff_vs_high_ci_lo": 0.0
+      },
+      "zebralogic_grid": {
+        "accuracy": 0.144,
+        "mean_reasoning_tokens": 5735.8,
+        "mean_cost_usd": 0.001689,
+        "mean_latency_ms": 61306.2,
+        "token_reduction_vs_max": -0.0268,
+        "accuracy_loss_vs_max": -0.026,
+        "diff_vs_max": 0.026,
+        "diff_vs_max_ci_lo": 0.0087,
+        "diff_vs_high": 0.0,
+        "diff_vs_high_ci_lo": 0.0
+      }
+    },
+    "always_max": {
+      "aime": {
+        "accuracy": 0.9667,
+        "mean_reasoning_tokens": 17590.9,
+        "mean_cost_usd": 0.004957,
+        "mean_latency_ms": 185371.1,
+        "token_reduction_vs_max": 0.0,
+        "accuracy_loss_vs_max": 0.0,
+        "diff_vs_max": 0.0,
+        "diff_vs_max_ci_lo": 0.0,
+        "diff_vs_high": 0.02,
+        "diff_vs_high_ci_lo": -0.0129
+      },
+      "easy2hard_amc": {
+        "accuracy": 0.764,
+        "mean_reasoning_tokens": 10020.3,
+        "mean_cost_usd": 0.002837,
+        "mean_latency_ms": 106920.6,
+        "token_reduction_vs_max": 0.0,
+        "accuracy_loss_vs_max": 0.0,
+        "diff_vs_max": 0.0,
+        "diff_vs_max_ci_lo": 0.0,
+        "diff_vs_high": -0.018,
+        "diff_vs_high_ci_lo": -0.04
+      },
+      "gpqa_diamond": {
+        "accuracy": 0.298,
+        "mean_reasoning_tokens": 24268.8,
+        "mean_cost_usd": 0.00683,
+        "mean_latency_ms": 365239.5,
+        "token_reduction_vs_max": -0.0,
+        "accuracy_loss_vs_max": 0.0,
+        "diff_vs_max": 0.0,
+        "diff_vs_max_ci_lo": 0.0,
+        "diff_vs_high": 0.044,
+        "diff_vs_high_ci_lo": 0.0061
+      },
+      "livecodebench": {
+        "accuracy": 0.372,
+        "mean_reasoning_tokens": 13721.8,
+        "mean_cost_usd": 0.003973,
+        "mean_latency_ms": 141942.5,
+        "token_reduction_vs_max": 0.0,
+        "accuracy_loss_vs_max": 0.0,
+        "diff_vs_max": 0.0,
+        "diff_vs_max_ci_lo": 0.0,
+        "diff_vs_high": 0.014,
+        "diff_vs_high_ci_lo": -0.0024
+      },
+      "math500": {
+        "accuracy": 0.796,
+        "mean_reasoning_tokens": 1673.7,
+        "mean_cost_usd": 0.000495,
+        "mean_latency_ms": 16560.9,
+        "token_reduction_vs_max": 0.0,
+        "accuracy_loss_vs_max": 0.0,
+        "diff_vs_max": 0.0,
+        "diff_vs_max_ci_lo": 0.0,
+        "diff_vs_high": -0.04,
+        "diff_vs_high_ci_lo": -0.0634
+      },
+      "zebralogic_grid": {
+        "accuracy": 0.118,
+        "mean_reasoning_tokens": 5585.9,
+        "mean_cost_usd": 0.001649,
+        "mean_latency_ms": 57420.7,
+        "token_reduction_vs_max": 0.0,
+        "accuracy_loss_vs_max": 0.0,
+        "diff_vs_max": 0.0,
+        "diff_vs_max_ci_lo": 0.0,
+        "diff_vs_high": -0.026,
+        "diff_vs_high_ci_lo": -0.0433
+      }
+    },
+    "stratum_router": {
+      "aime": {
+        "accuracy": 0.9667,
+        "mean_reasoning_tokens": 8262.3,
+        "mean_cost_usd": 0.002332,
+        "mean_latency_ms": 84309.8,
+        "token_reduction_vs_max": 0.5303,
+        "accuracy_loss_vs_max": 0.0,
+        "diff_vs_max": 0.0,
+        "diff_vs_max_ci_lo": -0.0158,
+        "diff_vs_high": 0.02,
+        "diff_vs_high_ci_lo": -0.0165
+      },
+      "easy2hard_amc": {
+        "accuracy": 0.776,
+        "mean_reasoning_tokens": 6175.6,
+        "mean_cost_usd": 0.001754,
+        "mean_latency_ms": 69475.8,
+        "token_reduction_vs_max": 0.3837,
+        "accuracy_loss_vs_max": -0.012,
+        "diff_vs_max": 0.012,
+        "diff_vs_max_ci_lo": -0.0041,
+        "diff_vs_high": -0.006,
+        "diff_vs_high_ci_lo": -0.0225
+      },
+      "gpqa_diamond": {
+        "accuracy": 0.298,
+        "mean_reasoning_tokens": 24268.8,
+        "mean_cost_usd": 0.00683,
+        "mean_latency_ms": 365239.5,
+        "token_reduction_vs_max": -0.0,
+        "accuracy_loss_vs_max": 0.0,
+        "diff_vs_max": 0.0,
+        "diff_vs_max_ci_lo": 0.0,
+        "diff_vs_high": 0.044,
+        "diff_vs_high_ci_lo": 0.0061
+      },
+      "livecodebench": {
+        "accuracy": 0.376,
+        "mean_reasoning_tokens": 9260.7,
+        "mean_cost_usd": 0.002718,
+        "mean_latency_ms": 95872.6,
+        "token_reduction_vs_max": 0.3251,
+        "accuracy_loss_vs_max": -0.004,
+        "diff_vs_max": 0.004,
+        "diff_vs_max_ci_lo": -0.0006,
+        "diff_vs_high": 0.018,
+        "diff_vs_high_ci_lo": 0.0024
+      },
+      "math500": {
+        "accuracy": 0.824,
+        "mean_reasoning_tokens": 808.3,
+        "mean_cost_usd": 0.000247,
+        "mean_latency_ms": 7923.0,
+        "token_reduction_vs_max": 0.517,
+        "accuracy_loss_vs_max": -0.028,
+        "diff_vs_max": 0.028,
+        "diff_vs_max_ci_lo": 0.0076,
+        "diff_vs_high": -0.012,
+        "diff_vs_high_ci_lo": -0.0287
+      },
+      "zebralogic_grid": {
+        "accuracy": 0.146,
+        "mean_reasoning_tokens": 4543.1,
+        "mean_cost_usd": 0.001351,
+        "mean_latency_ms": 46601.2,
+        "token_reduction_vs_max": 0.1867,
+        "accuracy_loss_vs_max": -0.028,
+        "diff_vs_max": 0.028,
+        "diff_vs_max_ci_lo": 0.0111,
+        "diff_vs_high": 0.002,
+        "diff_vs_high_ci_lo": -0.0116
+      }
+    },
+    "oracle_best": {
+      "aime": {
+        "accuracy": 0.9733,
+        "mean_reasoning_tokens": 8527.5,
+        "mean_cost_usd": 0.00241,
+        "mean_latency_ms": 86424.0,
+        "token_reduction_vs_max": 0.5152,
+        "accuracy_loss_vs_max": -0.0067,
+        "diff_vs_max": 0.0067,
+        "diff_vs_max_ci_lo": -0.0043,
+        "diff_vs_high": 0.0267,
+        "diff_vs_high_ci_lo": -0.0077
+      },
+      "easy2hard_amc": {
+        "accuracy": 0.8,
+        "mean_reasoning_tokens": 4506.0,
+        "mean_cost_usd": 0.001285,
+        "mean_latency_ms": 45508.7,
+        "token_reduction_vs_max": 0.5503,
+        "accuracy_loss_vs_max": -0.036,
+        "diff_vs_max": 0.036,
+        "diff_vs_max_ci_lo": 0.0183,
+        "diff_vs_high": 0.018,
+        "diff_vs_high_ci_lo": 0.0047
+      },
+      "gpqa_diamond": {
+        "accuracy": 0.39,
+        "mean_reasoning_tokens": 14325.9,
+        "mean_cost_usd": 0.004039,
+        "mean_latency_ms": 185328.3,
+        "token_reduction_vs_max": 0.4097,
+        "accuracy_loss_vs_max": -0.092,
+        "diff_vs_max": 0.092,
+        "diff_vs_max_ci_lo": 0.0666,
+        "diff_vs_high": 0.136,
+        "diff_vs_high_ci_lo": 0.1033
+      },
+      "livecodebench": {
+        "accuracy": 0.376,
+        "mean_reasoning_tokens": 5519.2,
+        "mean_cost_usd": 0.001669,
+        "mean_latency_ms": 55723.0,
+        "token_reduction_vs_max": 0.5978,
+        "accuracy_loss_vs_max": -0.004,
+        "diff_vs_max": 0.004,
+        "diff_vs_max_ci_lo": -0.0006,
+        "diff_vs_high": 0.018,
+        "diff_vs_high_ci_lo": 0.0024
+      },
+      "math500": {
+        "accuracy": 0.852,
+        "mean_reasoning_tokens": 729.4,
+        "mean_cost_usd": 0.000225,
+        "mean_latency_ms": 7139.6,
+        "token_reduction_vs_max": 0.5642,
+        "accuracy_loss_vs_max": -0.056,
+        "diff_vs_max": 0.056,
+        "diff_vs_max_ci_lo": 0.034,
+        "diff_vs_high": 0.016,
+        "diff_vs_high_ci_lo": 0.0059
+      },
+      "zebralogic_grid": {
+        "accuracy": 0.156,
+        "mean_reasoning_tokens": 3974.8,
+        "mean_cost_usd": 0.001189,
+        "mean_latency_ms": 41054.7,
+        "token_reduction_vs_max": 0.2884,
+        "accuracy_loss_vs_max": -0.038,
+        "diff_vs_max": 0.038,
+        "diff_vs_max_ci_lo": 0.0201,
+        "diff_vs_high": 0.012,
+        "diff_vs_high_ci_lo": 0.0029
+      }
+    },
+    "oracle_minimal": {
+      "aime": {
+        "accuracy": 0.9733,
+        "mean_reasoning_tokens": 8527.5,
+        "mean_cost_usd": 0.00241,
+        "mean_latency_ms": 86424.0,
+        "token_reduction_vs_max": 0.5152,
+        "accuracy_loss_vs_max": -0.0067,
+        "diff_vs_max": 0.0067,
+        "diff_vs_max_ci_lo": -0.0043,
+        "diff_vs_high": 0.0267,
+        "diff_vs_high_ci_lo": -0.0077
+      },
+      "easy2hard_amc": {
+        "accuracy": 0.8,
+        "mean_reasoning_tokens": 4506.0,
+        "mean_cost_usd": 0.001285,
+        "mean_latency_ms": 45508.7,
+        "token_reduction_vs_max": 0.5503,
+        "accuracy_loss_vs_max": -0.036,
+        "diff_vs_max": 0.036,
+        "diff_vs_max_ci_lo": 0.0183,
+        "diff_vs_high": 0.018,
+        "diff_vs_high_ci_lo": 0.0047
+      },
+      "gpqa_diamond": {
+        "accuracy": 0.39,
+        "mean_reasoning_tokens": 14325.9,
+        "mean_cost_usd": 0.004039,
+        "mean_latency_ms": 185328.3,
+        "token_reduction_vs_max": 0.4097,
+        "accuracy_loss_vs_max": -0.092,
+        "diff_vs_max": 0.092,
+        "diff_vs_max_ci_lo": 0.0666,
+        "diff_vs_high": 0.136,
+        "diff_vs_high_ci_lo": 0.1033
+      },
+      "livecodebench": {
+        "accuracy": 0.376,
+        "mean_reasoning_tokens": 5519.2,
+        "mean_cost_usd": 0.001669,
+        "mean_latency_ms": 55723.0,
+        "token_reduction_vs_max": 0.5978,
+        "accuracy_loss_vs_max": -0.004,
+        "diff_vs_max": 0.004,
+        "diff_vs_max_ci_lo": -0.0006,
+        "diff_vs_high": 0.018,
+        "diff_vs_high_ci_lo": 0.0024
+      },
+      "math500": {
+        "accuracy": 0.852,
+        "mean_reasoning_tokens": 729.4,
+        "mean_cost_usd": 0.000225,
+        "mean_latency_ms": 7139.6,
+        "token_reduction_vs_max": 0.5642,
+        "accuracy_loss_vs_max": -0.056,
+        "diff_vs_max": 0.056,
+        "diff_vs_max_ci_lo": 0.034,
+        "diff_vs_high": 0.016,
+        "diff_vs_high_ci_lo": 0.0059
+      },
+      "zebralogic_grid": {
+        "accuracy": 0.156,
+        "mean_reasoning_tokens": 3974.8,
+        "mean_cost_usd": 0.001189,
+        "mean_latency_ms": 41054.7,
+        "token_reduction_vs_max": 0.2884,
+        "accuracy_loss_vs_max": -0.038,
+        "diff_vs_max": 0.038,
+        "diff_vs_max_ci_lo": 0.0201,
+        "diff_vs_high": 0.012,
+        "diff_vs_high_ci_lo": 0.0029
+      }
+    },
+    "ml_router_cv": {
+      "aime": {
+        "accuracy": 0.9667,
+        "mean_reasoning_tokens": 8582.7,
+        "mean_cost_usd": 0.002424,
+        "mean_latency_ms": 87199.1,
+        "token_reduction_vs_max": 0.5121,
+        "accuracy_loss_vs_max": 0.0,
+        "diff_vs_max": 0.0,
+        "diff_vs_max_ci_lo": -0.0158,
+        "diff_vs_high": 0.02,
+        "diff_vs_high_ci_lo": -0.0165
+      },
+      "easy2hard_amc": {
+        "accuracy": 0.754,
+        "mean_reasoning_tokens": 4683.5,
+        "mean_cost_usd": 0.001334,
+        "mean_latency_ms": 50608.3,
+        "token_reduction_vs_max": 0.5326,
+        "accuracy_loss_vs_max": 0.01,
+        "diff_vs_max": -0.01,
+        "diff_vs_max_ci_lo": -0.034,
+        "diff_vs_high": -0.028,
+        "diff_vs_high_ci_lo": -0.0435
+      },
+      "gpqa_diamond": {
+        "accuracy": 0.26,
+        "mean_reasoning_tokens": 18047.4,
+        "mean_cost_usd": 0.005086,
+        "mean_latency_ms": 334518.5,
+        "token_reduction_vs_max": 0.2564,
+        "accuracy_loss_vs_max": 0.038,
+        "diff_vs_max": -0.038,
+        "diff_vs_max_ci_lo": -0.0723,
+        "diff_vs_high": 0.006,
+        "diff_vs_high_ci_lo": -0.0118
+      },
+      "livecodebench": {
+        "accuracy": 0.368,
+        "mean_reasoning_tokens": 4347.9,
+        "mean_cost_usd": 0.001339,
+        "mean_latency_ms": 42527.1,
+        "token_reduction_vs_max": 0.6831,
+        "accuracy_loss_vs_max": 0.004,
+        "diff_vs_max": -0.004,
+        "diff_vs_max_ci_lo": -0.0133,
+        "diff_vs_high": 0.01,
+        "diff_vs_high_ci_lo": -0.0043
+      },
+      "math500": {
+        "accuracy": 0.82,
+        "mean_reasoning_tokens": 1510.6,
+        "mean_cost_usd": 0.000448,
+        "mean_latency_ms": 14887.5,
+        "token_reduction_vs_max": 0.0975,
+        "accuracy_loss_vs_max": -0.024,
+        "diff_vs_max": 0.024,
+        "diff_vs_max_ci_lo": 0.0024,
+        "diff_vs_high": -0.016,
+        "diff_vs_high_ci_lo": -0.0261
+      },
+      "zebralogic_grid": {
+        "accuracy": 0.124,
+        "mean_reasoning_tokens": 4097.0,
+        "mean_cost_usd": 0.001225,
+        "mean_latency_ms": 42323.9,
+        "token_reduction_vs_max": 0.2665,
+        "accuracy_loss_vs_max": -0.006,
+        "diff_vs_max": 0.006,
+        "diff_vs_max_ci_lo": -0.0185,
+        "diff_vs_high": -0.02,
+        "diff_vs_high_ci_lo": -0.0412
+      }
+    },
+    "ml_router_lodo": {
+      "aime": {
+        "accuracy": 0.9667,
+        "mean_reasoning_tokens": 16736.9,
+        "mean_cost_usd": 0.004717,
+        "mean_latency_ms": 176153.8,
+        "token_reduction_vs_max": 0.0485,
+        "accuracy_loss_vs_max": 0.0,
+        "diff_vs_max": 0.0,
+        "diff_vs_max_ci_lo": 0.0,
+        "diff_vs_high": 0.02,
+        "diff_vs_high_ci_lo": -0.0129
+      },
+      "easy2hard_amc": {
+        "accuracy": 0.752,
+        "mean_reasoning_tokens": 4562.1,
+        "mean_cost_usd": 0.001296,
+        "mean_latency_ms": 49445.4,
+        "token_reduction_vs_max": 0.5447,
+        "accuracy_loss_vs_max": 0.012,
+        "diff_vs_max": -0.012,
+        "diff_vs_max_ci_lo": -0.038,
+        "diff_vs_high": -0.03,
+        "diff_vs_high_ci_lo": -0.0506
+      },
+      "gpqa_diamond": {
+        "accuracy": 0.258,
+        "mean_reasoning_tokens": 15884.2,
+        "mean_cost_usd": 0.004481,
+        "mean_latency_ms": 421447.6,
+        "token_reduction_vs_max": 0.3455,
+        "accuracy_loss_vs_max": 0.04,
+        "diff_vs_max": -0.04,
+        "diff_vs_max_ci_lo": -0.0774,
+        "diff_vs_high": 0.004,
+        "diff_vs_high_ci_lo": -0.0026
+      },
+      "livecodebench": {
+        "accuracy": 0.368,
+        "mean_reasoning_tokens": 4320.3,
+        "mean_cost_usd": 0.001331,
+        "mean_latency_ms": 42239.8,
+        "token_reduction_vs_max": 0.6851,
+        "accuracy_loss_vs_max": 0.004,
+        "diff_vs_max": -0.004,
+        "diff_vs_max_ci_lo": -0.0133,
+        "diff_vs_high": 0.01,
+        "diff_vs_high_ci_lo": -0.0043
+      },
+      "math500": {
+        "accuracy": 0.796,
+        "mean_reasoning_tokens": 1673.7,
+        "mean_cost_usd": 0.000495,
+        "mean_latency_ms": 16560.9,
+        "token_reduction_vs_max": 0.0,
+        "accuracy_loss_vs_max": 0.0,
+        "diff_vs_max": 0.0,
+        "diff_vs_max_ci_lo": 0.0,
+        "diff_vs_high": -0.04,
+        "diff_vs_high_ci_lo": -0.0634
+      },
+      "zebralogic_grid": {
+        "accuracy": 0.128,
+        "mean_reasoning_tokens": 5496.0,
+        "mean_cost_usd": 0.001623,
+        "mean_latency_ms": 56553.7,
+        "token_reduction_vs_max": 0.0161,
+        "accuracy_loss_vs_max": -0.01,
+        "diff_vs_max": 0.01,
+        "diff_vs_max_ci_lo": 0.0014,
+        "diff_vs_high": -0.016,
+        "diff_vs_high_ci_lo": -0.0313
+      }
+    }
+  }
+}

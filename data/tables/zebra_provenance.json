@@ -1,0 +1,30 @@
+{
+  "generated_at": "2026-08-12T06:18:05.590577+00:00",
+  "official_repo": "allenai/ZebraLogicBench",
+  "mirror_repo": "WildEval/ZebraLogic",
+  "checks": [
+    {
+      "mode": "mc",
+      "official_rows": 3259,
+      "mirror_rows": 3259,
+      "id_overlap": 3259,
+      "official_only": [],
+      "mirror_only": [],
+      "puzzle_text_hash_match": 3259,
+      "puzzle_text_hash_match_rate": 1.0,
+      "question_hash_match_rate": 1.0,
+      "choices_exact_match_rate": 1.0
+    },
+    {
+      "mode": "grid",
+      "official_rows": 1000,
+      "mirror_rows": 1000,
+      "id_overlap": 1000,
+      "official_only": [],
+      "mirror_only": [],
+      "puzzle_text_hash_match": 1000,
+      "puzzle_text_hash_match_rate": 1.0,
+      "size_match_rate": 1.0
+    }
+  ]
+}

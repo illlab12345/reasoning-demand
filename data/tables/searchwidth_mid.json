@@ -1,0 +1,168 @@
+{
+  "design": {
+    "task": "directed path counting (depth k=6, 20 nodes)",
+    "factor": "branching factor B",
+    "levels": [
+      2,
+      4,
+      8
+    ],
+    "matched_bases": 30,
+    "repeats": 3,
+    "settings": [
+      "low",
+      "high",
+      "max"
+    ],
+    "max_validation": "one variant per base (30 total)",
+    "source": [
+      "C:\\Users\\29465\\Desktop\\token\\results\\metrics\\p1_probe_20260817T150134-394d8b.jsonl",
+      "C:\\Users\\29465\\Desktop\\token\\results\\metrics\\p1_probe_20260817T170415-d96244.jsonl"
+    ]
+  },
+  "trial": {
+    "2": {
+      "low": {
+        "n_trials": 90,
+        "accuracy": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "mean_rt": 8619.6,
+        "median_rt": 8159.0
+      },
+      "high": {
+        "n_trials": 90,
+        "accuracy": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "mean_rt": 14628.0,
+        "median_rt": 14345.5
+      },
+      "max": {
+        "n_trials": 12,
+        "accuracy": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "mean_rt": 18517.2,
+        "median_rt": 18299.5
+      }
+    },
+    "4": {
+      "low": {
+        "n_trials": 90,
+        "accuracy": 0.9888888888888889,
+        "ci": [
+          0.9667,
+          1.0
+        ],
+        "mean_rt": 13987.9,
+        "median_rt": 13138.0
+      },
+      "high": {
+        "n_trials": 90,
+        "accuracy": 0.9888888888888889,
+        "ci": [
+          0.9667,
+          1.0
+        ],
+        "mean_rt": 21079.9,
+        "median_rt": 19687.5
+      },
+      "max": {
+        "n_trials": 30,
+        "accuracy": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "mean_rt": 22737.9,
+        "median_rt": 19708.0
+      }
+    },
+    "8": {
+      "low": {
+        "n_trials": 90,
+        "accuracy": 0.9222222222222223,
+        "ci": [
+          0.8667,
+          0.9667
+        ],
+        "mean_rt": 20366.6,
+        "median_rt": 19612.0
+      },
+      "high": {
+        "n_trials": 90,
+        "accuracy": 0.9777777777777777,
+        "ci": [
+          0.9444,
+          1.0
+        ],
+        "mean_rt": 31091.9,
+        "median_rt": 29645.0
+      },
+      "max": {
+        "n_trials": 48,
+        "accuracy": 0.9791666666666666,
+        "ci": [
+          0.9375,
+          1.0
+        ],
+        "mean_rt": 30744.7,
+        "median_rt": 29056.5
+      }
+    }
+  },
+  "item": {
+    "2": {
+      "n_items": 30,
+      "accuracy": {
+        "low": 1.0,
+        "high": 1.0,
+        "max": 1.0
+      },
+      "paired_diff_high_minus_low": 0.0,
+      "paired_ci": [
+        0.0,
+        0.0
+      ],
+      "paired_ci_lower_onesided": 0.0,
+      "n_bases_needing_high": 0
+    },
+    "4": {
+      "n_items": 30,
+      "accuracy": {
+        "low": 1.0,
+        "high": 1.0,
+        "max": 1.0
+      },
+      "paired_diff_high_minus_low": 0.0,
+      "paired_ci": [
+        0.0,
+        0.0
+      ],
+      "paired_ci_lower_onesided": 0.0,
+      "n_bases_needing_high": 0
+    },
+    "8": {
+      "n_items": 30,
+      "accuracy": {
+        "low": 0.9333,
+        "high": 1.0,
+        "max": 1.0
+      },
+      "paired_diff_high_minus_low": 0.0667,
+      "paired_ci": [
+        0.0,
+        0.1667
+      ],
+      "paired_ci_lower_onesided": 0.1,
+      "n_bases_needing_high": 2
+    }
+  }
+}

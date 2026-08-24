@@ -1,0 +1,8 @@
+{
+  "run_id": "20260816T164551-0c3124",
+  "planned": 3039,
+  "executed": 2931,
+  "skipped_cached": 108,
+  "failed": 278,
+  "per_run_path": "C:\\Users\\29465\\Desktop\\token\\results\\metrics\\p1_probe_20260816T164551-0c3124.jsonl"
+}

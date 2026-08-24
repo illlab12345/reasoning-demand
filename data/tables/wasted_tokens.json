@@ -1,0 +1,157 @@
+{
+  "math500": {
+    "low->high": {
+      "n_shared": 81,
+      "mean_waste": 105.2,
+      "median_waste": -5.4,
+      "total_waste": 8524.0,
+      "pct_overhead": 0.1562
+    },
+    "low->max": {
+      "n_shared": 80,
+      "mean_waste": 671.6,
+      "median_waste": 5.8,
+      "total_waste": 53725.0,
+      "pct_overhead": 0.4952
+    },
+    "high->max": {
+      "n_shared": 79,
+      "mean_waste": 572.5,
+      "median_waste": 20.2,
+      "total_waste": 45230.6,
+      "pct_overhead": 0.3428
+    }
+  },
+  "zebralogic_grid": {
+    "low->high": {
+      "n_shared": 10,
+      "mean_waste": 263.0,
+      "median_waste": -58.7,
+      "total_waste": 2629.8,
+      "pct_overhead": 0.0427
+    },
+    "low->max": {
+      "n_shared": 7,
+      "mean_waste": 527.3,
+      "median_waste": 353.8,
+      "total_waste": 3691.0,
+      "pct_overhead": 0.2155
+    },
+    "high->max": {
+      "n_shared": 10,
+      "mean_waste": 482.3,
+      "median_waste": 498.0,
+      "total_waste": 4823.2,
+      "pct_overhead": 0.2484
+    }
+  },
+  "easy2hard_amc": {
+    "low->high": {
+      "n_shared": 76,
+      "mean_waste": 1608.0,
+      "median_waste": 266.1,
+      "total_waste": 122208.8,
+      "pct_overhead": 0.2219
+    },
+    "low->max": {
+      "n_shared": 76,
+      "mean_waste": 4455.1,
+      "median_waste": 1071.7,
+      "total_waste": 338585.4,
+      "pct_overhead": 0.9958
+    },
+    "high->max": {
+      "n_shared": 77,
+      "mean_waste": 2810.6,
+      "median_waste": 953.0,
+      "total_waste": 216419.0,
+      "pct_overhead": 0.7446
+    }
+  },
+  "aime": {
+    "low->high": {
+      "n_shared": 28,
+      "mean_waste": 2744.2,
+      "median_waste": 814.7,
+      "total_waste": 76837.2,
+      "pct_overhead": 0.3414
+    },
+    "low->max": {
+      "n_shared": 29,
+      "mean_waste": 8554.1,
+      "median_waste": 8012.6,
+      "total_waste": 248068.4,
+      "pct_overhead": 1.5175
+    },
+    "high->max": {
+      "n_shared": 29,
+      "mean_waste": 5701.2,
+      "median_waste": 5019.4,
+      "total_waste": 165334.0,
+      "pct_overhead": 1.0043
+    }
+  },
+  "gpqa_diamond": {
+    "low->high": {
+      "n_shared": 13,
+      "mean_waste": -964.0,
+      "median_waste": -1062.6,
+      "total_waste": -12532.4,
+      "pct_overhead": -0.1784
+    },
+    "low->max": {
+      "n_shared": 18,
+      "mean_waste": 8845.8,
+      "median_waste": 7528.8,
+      "total_waste": 159224.6,
+      "pct_overhead": 0.8796
+    },
+    "high->max": {
+      "n_shared": 12,
+      "mean_waste": 5377.6,
+      "median_waste": 5071.1,
+      "total_waste": 64530.8,
+      "pct_overhead": 2.6449
+    }
+  },
+  "livecodebench": {
+    "low->high": {
+      "n_shared": 35,
+      "mean_waste": 13206.3,
+      "median_waste": 13156.8,
+      "total_waste": 462219.2,
+      "pct_overhead": 4.3861
+    },
+    "low->max": {
+      "n_shared": 37,
+      "mean_waste": 9218.8,
+      "median_waste": 6900.2,
+      "total_waste": 341094.8,
+      "pct_overhead": 2.5596
+    },
+    "high->max": {
+      "n_shared": 35,
+      "mean_waste": -5121.6,
+      "median_waste": -4095.4,
+      "total_waste": -179257.0,
+      "pct_overhead": -0.1934
+    }
+  },
+  "pooled": {
+    "low->high": {
+      "n_shared": 243,
+      "total_waste": 659886.6,
+      "mean_waste_per_sample": 2715.6
+    },
+    "low->max": {
+      "n_shared": 247,
+      "total_waste": 1144389.2,
+      "mean_waste_per_sample": 4633.2
+    },
+    "high->max": {
+      "n_shared": 242,
+      "total_waste": 317080.6,
+      "mean_waste_per_sample": 1310.3
+    }
+  }
+}

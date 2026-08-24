@@ -1,0 +1,11 @@
+{
+  "run_id": "20260812T092310-c06828",
+  "stage": "calibration",
+  "planned_requests": 810,
+  "per_run_path": "results\\metrics\\20260812T092310-c06828.jsonl",
+  "executed": 76,
+  "skipped_cached": 734,
+  "failed": 0,
+  "completed": 810,
+  "finished_at": "2026-08-12T09:44:07.214741+00:00"
+}

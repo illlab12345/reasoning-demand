@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.venv/
+env/
+
+# Secrets — never commit API keys
+deepseek_key
+*.key
+.env
+
+# Runtime artifacts (created by the pipeline; not part of the release)
+work/
+results/
+logs/
+notebooks/.ipynb_checkpoints/
+
+# Public benchmark data (fetched at pinned revisions by code/scripts/download_datasets.py)
+datasets/raw/
+datasets/processed/
+datasets/pilot/
+datasets/probe/

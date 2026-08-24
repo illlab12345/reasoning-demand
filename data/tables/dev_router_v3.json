@@ -1,0 +1,44 @@
+{
+  "n_items": 530,
+  "reference": "Always High",
+  "pooled": {
+    "acc_diff": 0.0113,
+    "ci_lo_onesided": 0.0019,
+    "ci": [
+      0.0004,
+      0.0223
+    ],
+    "token_reduction": 0.3373,
+    "assigned": {
+      "low": 308,
+      "high": 200,
+      "max": 22
+    }
+  },
+  "per_domain": {
+    "aime": {
+      "n": 30,
+      "acc_diff": 0.02
+    },
+    "easy2hard_amc": {
+      "n": 100,
+      "acc_diff": -0.002
+    },
+    "gpqa_diamond": {
+      "n": 100,
+      "acc_diff": 0.042
+    },
+    "livecodebench": {
+      "n": 100,
+      "acc_diff": 0.018
+    },
+    "math500": {
+      "n": 100,
+      "acc_diff": -0.006
+    },
+    "zebralogic_grid": {
+      "n": 100,
+      "acc_diff": 0.002
+    }
+  }
+}

@@ -1,0 +1,45 @@
+# Pilot experiment matrix v0.1
+schema_version: v0.1
+
+run:
+  results_root: work
+  adapter: deepseek
+
+stages:
+  smoke:
+    repeats: 1
+    settings: [low, max]
+  calibration:
+    repeats: 3
+  pilot:
+    repeats: 5
+
+datasets:
+  math500:
+    prompt: math_v1
+    smoke: datasets/pilot/math500_smoke_v1.jsonl
+    calibration: datasets/pilot/math500_calibration_v1.jsonl
+    pilot: datasets/pilot/math500_pilot_v1.jsonl
+  zebralogic_grid:
+    prompt: zebra_grid_v1
+    smoke: datasets/pilot/zebralogic_grid_smoke_v1.jsonl
+    calibration: datasets/pilot/zebralogic_grid_calibration_v1.jsonl
+    pilot: datasets/pilot/zebralogic_grid_pilot_v1.jsonl
+  easy2hard_amc:
+    prompt: e2h_amc_v1
+    smoke: datasets/pilot/easy2hard_amc_smoke_v1.jsonl
+    calibration: datasets/pilot/easy2hard_amc_calibration_v1.jsonl
+    pilot: datasets/pilot/easy2hard_amc_pilot_v1.jsonl
+  aime:
+    prompt: aime_v1
+    pilot: datasets/pilot/aime_pilot_v1.jsonl
+  gpqa_diamond:
+    prompt: gpqa_v1
+    pilot: datasets/pilot/gpqa_diamond_pilot_v1.jsonl
+  livecodebench:
+    prompt: livecodebench_v1
+    pilot: datasets/pilot/livecodebench_pilot_v1.jsonl
+
+models:
+  - deepseek-v4-flash
+  - deepseek-v4-pro

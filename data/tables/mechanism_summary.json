@@ -1,0 +1,347 @@
+{
+  "design": {
+    "items": 180,
+    "levels": {
+      "depth": [
+        8,
+        16,
+        24
+      ],
+      "distractor": [
+        0,
+        2,
+        4
+      ],
+      "constraints": [
+        4,
+        8,
+        12
+      ]
+    },
+    "repeats": 3,
+    "settings": [
+      "low",
+      "high",
+      "max"
+    ]
+  },
+  "cells": {
+    "depth": [
+      {
+        "level": 8,
+        "setting": "high",
+        "n_trials": 60,
+        "accuracy": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "mean_rt": 183.9,
+        "median_rt": 160.0
+      },
+      {
+        "level": 8,
+        "setting": "low",
+        "n_trials": 60,
+        "accuracy": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "mean_rt": 314.8,
+        "median_rt": 300.0
+      },
+      {
+        "level": 8,
+        "setting": "max",
+        "n_trials": 60,
+        "accuracy": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "mean_rt": 216.8,
+        "median_rt": 202.5
+      },
+      {
+        "level": 16,
+        "setting": "high",
+        "n_trials": 60,
+        "accuracy": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "mean_rt": 546.4,
+        "median_rt": 485.5
+      },
+      {
+        "level": 16,
+        "setting": "low",
+        "n_trials": 60,
+        "accuracy": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "mean_rt": 908.8,
+        "median_rt": 899.5
+      },
+      {
+        "level": 16,
+        "setting": "max",
+        "n_trials": 30,
+        "accuracy": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "mean_rt": 765.6,
+        "median_rt": 654.5
+      },
+      {
+        "level": 24,
+        "setting": "high",
+        "n_trials": 60,
+        "accuracy": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "mean_rt": 1067.6,
+        "median_rt": 948.5
+      },
+      {
+        "level": 24,
+        "setting": "low",
+        "n_trials": 60,
+        "accuracy": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "mean_rt": 1853.1,
+        "median_rt": 1647.0
+      }
+    ],
+    "distractor": [
+      {
+        "level": 0,
+        "setting": "high",
+        "n_trials": 60,
+        "accuracy": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "mean_rt": 303.8,
+        "median_rt": 285.0
+      },
+      {
+        "level": 0,
+        "setting": "low",
+        "n_trials": 60,
+        "accuracy": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "mean_rt": 515.8,
+        "median_rt": 502.5
+      },
+      {
+        "level": 2,
+        "setting": "high",
+        "n_trials": 60,
+        "accuracy": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "mean_rt": 345.5,
+        "median_rt": 322.0
+      },
+      {
+        "level": 2,
+        "setting": "low",
+        "n_trials": 60,
+        "accuracy": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "mean_rt": 692.8,
+        "median_rt": 590.5
+      },
+      {
+        "level": 4,
+        "setting": "high",
+        "n_trials": 60,
+        "accuracy": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "mean_rt": 344.8,
+        "median_rt": 327.0
+      },
+      {
+        "level": 4,
+        "setting": "low",
+        "n_trials": 60,
+        "accuracy": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "mean_rt": 720.4,
+        "median_rt": 618.5
+      }
+    ],
+    "constraints": [
+      {
+        "level": 4,
+        "setting": "high",
+        "n_trials": 60,
+        "accuracy": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "mean_rt": 1386.3,
+        "median_rt": 892.0
+      },
+      {
+        "level": 4,
+        "setting": "low",
+        "n_trials": 60,
+        "accuracy": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "mean_rt": 2964.7,
+        "median_rt": 2843.0
+      },
+      {
+        "level": 8,
+        "setting": "high",
+        "n_trials": 60,
+        "accuracy": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "mean_rt": 2925.1,
+        "median_rt": 1828.0
+      },
+      {
+        "level": 8,
+        "setting": "low",
+        "n_trials": 60,
+        "accuracy": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "mean_rt": 3171.9,
+        "median_rt": 2894.0
+      },
+      {
+        "level": 12,
+        "setting": "high",
+        "n_trials": 60,
+        "accuracy": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "mean_rt": 2933.4,
+        "median_rt": 1859.5
+      },
+      {
+        "level": 12,
+        "setting": "low",
+        "n_trials": 60,
+        "accuracy": 0.8667,
+        "ci": [
+          0.7667,
+          0.95
+        ],
+        "mean_rt": 4626.8,
+        "median_rt": 4143.5
+      }
+    ]
+  },
+  "item_level": {
+    "depth": [
+      {
+        "level": 8,
+        "n_items": 20,
+        "paired_diff_high_minus_low": 0.0,
+        "paired_ci_lower_onesided": 0.0,
+        "n_items_needing_high": 0
+      },
+      {
+        "level": 16,
+        "n_items": 20,
+        "paired_diff_high_minus_low": 0.0,
+        "paired_ci_lower_onesided": 0.0,
+        "n_items_needing_high": 0
+      },
+      {
+        "level": 24,
+        "n_items": 20,
+        "paired_diff_high_minus_low": 0.0,
+        "paired_ci_lower_onesided": 0.0,
+        "n_items_needing_high": 0
+      }
+    ],
+    "distractor": [
+      {
+        "level": 0,
+        "n_items": 20,
+        "paired_diff_high_minus_low": 0.0,
+        "paired_ci_lower_onesided": 0.0,
+        "n_items_needing_high": 0
+      },
+      {
+        "level": 2,
+        "n_items": 20,
+        "paired_diff_high_minus_low": 0.0,
+        "paired_ci_lower_onesided": 0.0,
+        "n_items_needing_high": 0
+      },
+      {
+        "level": 4,
+        "n_items": 20,
+        "paired_diff_high_minus_low": 0.0,
+        "paired_ci_lower_onesided": 0.0,
+        "n_items_needing_high": 0
+      }
+    ],
+    "constraints": [
+      {
+        "level": 4,
+        "n_items": 20,
+        "paired_diff_high_minus_low": 0.0,
+        "paired_ci_lower_onesided": 0.0,
+        "n_items_needing_high": 0
+      },
+      {
+        "level": 8,
+        "n_items": 20,
+        "paired_diff_high_minus_low": 0.0,
+        "paired_ci_lower_onesided": 0.0,
+        "n_items_needing_high": 0
+      },
+      {
+        "level": 12,
+        "n_items": 20,
+        "paired_diff_high_minus_low": 0.1,
+        "paired_ci_lower_onesided": 0.0,
+        "n_items_needing_high": 2
+      }
+    ]
+  }
+}

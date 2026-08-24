@@ -1,0 +1,92 @@
+{
+  "run": "20260812T092310-c06828.jsonl",
+  "groups": {
+    "easy2hard_amc|deepseek-v4-flash|high": {
+      "n": 90,
+      "accuracy": 0.7556,
+      "mean_reasoning_tokens": 7028.9,
+      "median_reasoning_tokens": 2822.0,
+      "mean_latency_ms": 60776.68,
+      "errors": 0,
+      "cost_usd": 0.1796
+    },
+    "easy2hard_amc|deepseek-v4-flash|low": {
+      "n": 90,
+      "accuracy": 0.7111,
+      "mean_reasoning_tokens": 5182.18,
+      "median_reasoning_tokens": 3843.0,
+      "mean_latency_ms": 45650.56,
+      "errors": 0,
+      "cost_usd": 0.1321
+    },
+    "easy2hard_amc|deepseek-v4-flash|max": {
+      "n": 90,
+      "accuracy": 0.6889,
+      "mean_reasoning_tokens": 12466.59,
+      "median_reasoning_tokens": 8360.5,
+      "mean_latency_ms": 113069.18,
+      "errors": 0,
+      "cost_usd": 0.3168
+    },
+    "math500|deepseek-v4-flash|high": {
+      "n": 90,
+      "accuracy": 0.8889,
+      "mean_reasoning_tokens": 586.12,
+      "median_reasoning_tokens": 172.0,
+      "mean_latency_ms": 5722.39,
+      "errors": 0,
+      "cost_usd": 0.017
+    },
+    "math500|deepseek-v4-flash|low": {
+      "n": 90,
+      "accuracy": 0.8,
+      "mean_reasoning_tokens": 525.88,
+      "median_reasoning_tokens": 189.0,
+      "mean_latency_ms": 5299.94,
+      "errors": 0,
+      "cost_usd": 0.0145
+    },
+    "math500|deepseek-v4-flash|max": {
+      "n": 90,
+      "accuracy": 0.8111,
+      "mean_reasoning_tokens": 1008.12,
+      "median_reasoning_tokens": 248.0,
+      "mean_latency_ms": 10004.7,
+      "errors": 0,
+      "cost_usd": 0.0278
+    },
+    "zebralogic_grid|deepseek-v4-flash|high": {
+      "n": 90,
+      "accuracy": 0.1667,
+      "mean_reasoning_tokens": 5327.86,
+      "median_reasoning_tokens": 3147.5,
+      "mean_latency_ms": 47595.54,
+      "errors": 0,
+      "cost_usd": 0.1416
+    },
+    "zebralogic_grid|deepseek-v4-flash|low": {
+      "n": 90,
+      "accuracy": 0.1444,
+      "mean_reasoning_tokens": 3747.97,
+      "median_reasoning_tokens": 2729.5,
+      "mean_latency_ms": 33147.21,
+      "errors": 0,
+      "cost_usd": 0.1009
+    },
+    "zebralogic_grid|deepseek-v4-flash|max": {
+      "n": 90,
+      "accuracy": 0.1667,
+      "mean_reasoning_tokens": 5392.37,
+      "median_reasoning_tokens": 3502.5,
+      "mean_latency_ms": 48137.72,
+      "errors": 0,
+      "cost_usd": 0.1434
+    },
+    "_grid_parse": {
+      "n": 270,
+      "parse_failures": 0,
+      "parse_failure_rate": 0.0
+    }
+  },
+  "total_cost_usd": 1.0738
+}

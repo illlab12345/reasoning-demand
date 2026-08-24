@@ -1,0 +1,127 @@
+# LLM Reasoning Efficiency - Pilot 数据集注册表
+# 所有数据集固定到 HuggingFace revision SHA，禁止静默更换版本。
+
+defaults:
+  raw_dir: datasets/raw
+  processed_dir: datasets/processed
+  pilot_dir: datasets/pilot
+  schema_version: v0.1
+
+datasets:
+  math500:
+    name: MATH-500
+    repo_id: HuggingFaceH4/MATH-500
+    revision: 6e4ed1a2a79af7d8630a6b768ec859cb5af4d3be
+    source_url: https://huggingface.co/datasets/HuggingFaceH4/MATH-500
+    license: MIT
+    domain: math
+    files:
+      - test.jsonl
+    loader: math500
+    expected_rows: 500
+
+  zebralogic:
+    name: ZebraLogicBench
+    # 官方 allenai/ZebraLogicBench 公开版刻意隐藏答案（grid_mode solution 为占位符，
+    # mc_mode 无 answer 字段）；带答案的官方私有版需单独申请。
+    # 本实验使用 WildEval/ZebraLogic 镜像（同一批 puzzle，ID 与 allenai 公开版逐一对齐，
+    # 已验证 3259 mc + 1000 grid 全部一致），以获得 ground truth。
+    repo_id: WildEval/ZebraLogic
+    revision: 0a473f5a0054835754ed156d5a79c6ce27178bb1
+    source_url: https://huggingface.co/datasets/WildEval/ZebraLogic
+    reference_repo_id: allenai/ZebraLogicBench
+    reference_revision: 2f94a445d7079f20146f5443e2606049de8543e0
+    license: not-declared
+    domain: logic
+    files:
+      - mc_mode/test-00000-of-00001.parquet
+      - grid_mode/test-00000-of-00001.parquet
+    loader: zebralogic
+    expected_rows: 4259
+
+  easy2hard:
+    name: Easy2Hard-Bench
+    repo_id: furonghuang-lab/Easy2Hard-Bench
+    revision: 55bc0d2fb10954151e669d2026b87fa896f2fa26
+    source_url: https://huggingface.co/datasets/furonghuang-lab/Easy2Hard-Bench
+    license: cc-by-sa-4.0
+    domain: mixed
+    files:
+      - E2H-AMC/train-00000-of-00001.parquet
+      - E2H-AMC/eval-00000-of-00001.parquet
+      - E2H-Codeforces/train-00000-of-00001.parquet
+      - E2H-Codeforces/eval-00000-of-00001.parquet
+      - E2H-ARC/eval-00000-of-00001.parquet
+      - E2H-GSM8K/eval-00000-of-00001.parquet
+      - E2H-Lichess/train-00000-of-00002.parquet
+      - E2H-Lichess/train-00001-of-00002.parquet
+      - E2H-Lichess/eval-00000-of-00001.parquet
+      - E2H-Winogrande/eval-00000-of-00001.parquet
+    loader: easy2hard
+    expected_rows: 92153
+    subsets:
+      E2H-AMC:
+        domain: math
+        files:
+          - E2H-AMC/train-00000-of-00001.parquet
+          - E2H-AMC/eval-00000-of-00001.parquet
+      E2H-Codeforces:
+        domain: coding
+        files:
+          - E2H-Codeforces/train-00000-of-00001.parquet
+          - E2H-Codeforces/eval-00000-of-00001.parquet
+      E2H-ARC:
+        domain: reasoning
+        files:
+          - E2H-ARC/eval-00000-of-00001.parquet
+      E2H-GSM8K:
+        domain: math
+        files:
+          - E2H-GSM8K/eval-00000-of-00001.parquet
+      E2H-Lichess:
+        domain: chess
+        files:
+          - E2H-Lichess/train-00000-of-00002.parquet
+          - E2H-Lichess/train-00001-of-00002.parquet
+          - E2H-Lichess/eval-00000-of-00001.parquet
+      E2H-Winogrande:
+        domain: commonsense
+        files:
+          - E2H-Winogrande/eval-00000-of-00001.parquet
+
+  aime:
+    name: AIME
+    repo_id: HuggingFaceH4/aime_2024
+    revision: 2fe88a2f1091d5048c0f36abc874fb997b3dd99a
+    source_url: https://huggingface.co/datasets/HuggingFaceH4/aime_2024
+    license: see-repo
+    domain: math
+    files:
+      - data/train-00000-of-00001.parquet
+    loader: aime
+    expected_rows: 30
+
+  gpqa:
+    name: GPQA-Diamond
+    repo_id: dakopi/gpqa_diamond
+    revision: a8c65b877e2c481c2ad38a22366068e48f8dbdcd
+    source_url: https://huggingface.co/datasets/dakopi/gpqa_diamond
+    license: see-repo
+    domain: science
+    files:
+      - data/train-00000-of-00001.parquet
+    loader: gpqa
+    expected_rows: 198
+
+  livecodebench:
+    name: LiveCodeBench
+    repo_id: livecodebench/code_generation_lite
+    revision: 0fe84c3912ea0c4d4a78037083943e8f0c4dd505
+    source_url: https://huggingface.co/datasets/livecodebench/code_generation_lite
+    license: MIT
+    domain: coding
+    files:
+      - test.jsonl
+    loader: livecodebench
+    expected_rows: 328
+    note: "官方 test.jsonl 传输截断；使用文件内 328 条完整记录（见 raw manifest）"

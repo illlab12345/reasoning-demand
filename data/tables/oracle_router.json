@@ -1,0 +1,49 @@
+{
+  "n_samples": 530,
+  "policies": {
+    "always_low": {
+      "accuracy": 0.4925,
+      "total_reasoning_tokens": 2789714.0,
+      "total_cost_usd": 0.806365,
+      "total_latency_ms": 256935683.0
+    },
+    "always_high": {
+      "accuracy": 0.4868,
+      "total_reasoning_tokens": 5192558.8,
+      "total_cost_usd": 1.483949,
+      "total_latency_ms": 403907495.0
+    },
+    "always_max": {
+      "accuracy": 0.4925,
+      "total_reasoning_tokens": 6054764.6,
+      "total_cost_usd": 1.727039,
+      "total_latency_ms": 371847745.0
+    },
+    "oracle_minimal": {
+      "accuracy": 0.5358,
+      "total_reasoning_tokens": 2962101.8,
+      "total_cost_usd": 0.8549,
+      "total_latency_ms": 300250948.0
+    }
+  },
+  "savings": {
+    "vs_always_high": {
+      "token_reduction": 0.4295,
+      "cost_reduction": 0.4239,
+      "latency_reduction": 0.2566,
+      "accuracy_delta": 0.049
+    },
+    "vs_always_max": {
+      "token_reduction": 0.5108,
+      "cost_reduction": 0.505,
+      "latency_reduction": 0.1925,
+      "accuracy_delta": 0.0433
+    }
+  },
+  "oracle_setting_distribution": {
+    "low": 507,
+    "high": 15,
+    "max": 8
+  },
+  "unsolvable_at_all_settings": 246
+}

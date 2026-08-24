@@ -1,0 +1,32 @@
+{
+  "schema_version": "p1-probe-v3",
+  "model": "deepseek-v4-flash",
+  "repeats": 3,
+  "temperature": 0.0,
+  "seed": null,
+  "frozen_router_rule": {
+    "math500|1": "high",
+    "math500|2": "high",
+    "math500|3": "max",
+    "math500|4": "low",
+    "math500|5": "low",
+    "easy2hard_amc|1": "max",
+    "easy2hard_amc|2": "high",
+    "easy2hard_amc|3": "max",
+    "easy2hard_amc|4": "low",
+    "easy2hard_amc|5": "low",
+    "zebralogic_grid|1": "high",
+    "zebralogic_grid|2": "high",
+    "zebralogic_grid|3": "low",
+    "zebralogic_grid|4": "max",
+    "zebralogic_grid|5": "low",
+    "aime|1": "low",
+    "gpqa_diamond|1": "max",
+    "livecodebench|easy": "low",
+    "livecodebench|hard": "max",
+    "livecodebench|medium": "low"
+  },
+  "mechanism_items": "C:\\Users\\29465\\Desktop\\token\\datasets\\probe\\mechanism_probe_v1.jsonl",
+  "prospective_items": "C:\\Users\\29465\\Desktop\\token\\datasets\\probe\\prospective_smoke_v1.jsonl",
+  "created_at": "2026-08-17T00:57:48.423603+00:00"
+}

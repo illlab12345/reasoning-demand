@@ -1,0 +1,33 @@
+{
+  "generated_at": "2026-08-12T06:12:52.269854+00:00",
+  "n_grid_records": 1000,
+  "quintile_counts": {
+    "1": 200,
+    "2": 200,
+    "3": 200,
+    "4": 200,
+    "5": 200
+  },
+  "feature_stats": {
+    "n_houses": {
+      "min": 2.0,
+      "max": 6.0,
+      "mean": 4.0
+    },
+    "n_attributes": {
+      "min": 2.0,
+      "max": 6.0,
+      "mean": 4.0
+    },
+    "n_cells": {
+      "min": 4.0,
+      "max": 36.0,
+      "mean": 16.0
+    },
+    "n_clues": {
+      "min": 1.0,
+      "max": 29.0,
+      "mean": 10.388
+    }
+  }
+}

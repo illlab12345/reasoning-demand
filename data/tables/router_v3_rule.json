@@ -1,0 +1,51 @@
+{
+  "epsilon": 0.03,
+  "saving_threshold": 0.05,
+  "rule": {
+    "aime|1": "low",
+    "easy2hard_amc|1": "high",
+    "easy2hard_amc|2": "high",
+    "easy2hard_amc|3": "high",
+    "easy2hard_amc|4": "high",
+    "easy2hard_amc|5": "low",
+    "gpqa_diamond|1": "low",
+    "livecodebench|easy": "low",
+    "livecodebench|hard": "max",
+    "livecodebench|medium": "low",
+    "math500|1": "high",
+    "math500|2": "high",
+    "math500|3": "high",
+    "math500|4": "low",
+    "math500|5": "low",
+    "zebralogic_grid|1": "high",
+    "zebralogic_grid|2": "high",
+    "zebralogic_grid|3": "low",
+    "zebralogic_grid|4": "high",
+    "zebralogic_grid|5": "low"
+  },
+  "dev_evaluation": {
+    "vs_high": {
+      "accuracy": 0.513,
+      "mean_rt": 6492.9,
+      "diff_vs_high": 0.011,
+      "diff_vs_high_ci_lo": 0.002
+    },
+    "vs_max": {
+      "accuracy": 0.513,
+      "mean_rt": 6492.9,
+      "diff_vs_max": 0.015,
+      "diff_vs_max_ci_lo": 0.005
+    }
+  },
+  "prospective_simulation_on_probe_v2": {
+    "n_items": 30,
+    "acc_diff": 0.033,
+    "acc_diff_ci_lo": -0.067,
+    "token_reduction": -0.129,
+    "assigned": {
+      "high": 17,
+      "low": 12,
+      "max": 1
+    }
+  }
+}

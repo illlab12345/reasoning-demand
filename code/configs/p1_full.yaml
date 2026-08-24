@@ -1,0 +1,43 @@
+{
+  "schema_version": "p1-full-v1",
+  "model": "deepseek-v4-flash",
+  "repeats": 3,
+  "temperature": 0.0,
+  "seed": null,
+  "frozen_router_rule": {
+    "aime|1": "low",
+    "easy2hard_amc|1": "high",
+    "easy2hard_amc|2": "high",
+    "easy2hard_amc|3": "high",
+    "easy2hard_amc|4": "high",
+    "easy2hard_amc|5": "low",
+    "gpqa_diamond|1": "low",
+    "livecodebench|easy": "low",
+    "livecodebench|hard": "max",
+    "livecodebench|medium": "low",
+    "math500|1": "high",
+    "math500|2": "high",
+    "math500|3": "high",
+    "math500|4": "low",
+    "math500|5": "low",
+    "zebralogic_grid|1": "high",
+    "zebralogic_grid|2": "high",
+    "zebralogic_grid|3": "low",
+    "zebralogic_grid|4": "high",
+    "zebralogic_grid|5": "low"
+  },
+  "item_files": [
+    "C:\\Users\\29465\\Desktop\\token\\datasets\\probe\\p1_full_mechanism_v1.jsonl",
+    "C:\\Users\\29465\\Desktop\\token\\datasets\\probe\\p1_full_prospective_v1.jsonl"
+  ],
+  "primary_endpoints": {
+    "non_inferiority_vs_high": {
+      "epsilon": 0.03,
+      "ci": "item-level bootstrap, 95% one-sided"
+    },
+    "token_reduction_vs_high": {
+      "criterion": "total tokens lower than Always High"
+    }
+  },
+  "created_at": "2026-08-17T00:58:02.145304+00:00"
+}

@@ -1,0 +1,219 @@
+{
+  "epsilon_sensitivity": {
+    "0.01": {
+      "math500": {
+        "msrb": "high",
+        "arr": 0.4681
+      },
+      "easy2hard_amc": {
+        "msrb": "high",
+        "arr": 0.3603
+      },
+      "zebralogic_grid": {
+        "msrb": "high",
+        "arr": -0.0268
+      },
+      "aime": {
+        "msrb": "low",
+        "arr": 0.5303
+      },
+      "gpqa_diamond": {
+        "msrb": "low",
+        "arr": 0.5168
+      },
+      "livecodebench": {
+        "msrb": "low",
+        "arr": 0.6851
+      }
+    },
+    "0.03": {
+      "math500": {
+        "msrb": "low",
+        "arr": 0.5063
+      },
+      "easy2hard_amc": {
+        "msrb": "high",
+        "arr": 0.3603
+      },
+      "zebralogic_grid": {
+        "msrb": "max",
+        "arr": 0.0
+      },
+      "aime": {
+        "msrb": "low",
+        "arr": 0.5303
+      },
+      "gpqa_diamond": {
+        "msrb": "low",
+        "arr": 0.5168
+      },
+      "livecodebench": {
+        "msrb": "low",
+        "arr": 0.6851
+      }
+    },
+    "0.05": {
+      "math500": {
+        "msrb": "low",
+        "arr": 0.5063
+      },
+      "easy2hard_amc": {
+        "msrb": "low",
+        "arr": 0.541
+      },
+      "zebralogic_grid": {
+        "msrb": "low",
+        "arr": 0.2935
+      },
+      "aime": {
+        "msrb": "low",
+        "arr": 0.5303
+      },
+      "gpqa_diamond": {
+        "msrb": "low",
+        "arr": 0.5168
+      },
+      "livecodebench": {
+        "msrb": "low",
+        "arr": 0.6851
+      }
+    }
+  },
+  "heavy_tail_tokens": {
+    "math500": {
+      "n": 1500,
+      "P50": 177,
+      "P90": 2388,
+      "P95": 6875,
+      "P99": 16678,
+      "top10_share": 0.7329,
+      "gini": 0.7998
+    },
+    "easy2hard_amc": {
+      "n": 1500,
+      "P50": 2438,
+      "P90": 21355,
+      "P95": 28959,
+      "P99": 46340,
+      "top10_share": 0.46,
+      "gini": 0.6627
+    },
+    "zebralogic_grid": {
+      "n": 1500,
+      "P50": 2863,
+      "P90": 12877,
+      "P95": 17553,
+      "P99": 30178,
+      "top10_share": 0.3935,
+      "gini": 0.5634
+    },
+    "aime": {
+      "n": 450,
+      "P50": 6062,
+      "P90": 34360,
+      "P95": 53229,
+      "P99": 80776,
+      "top10_share": 0.4476,
+      "gini": 0.6011
+    },
+    "gpqa_diamond": {
+      "n": 1500,
+      "P50": 14052,
+      "P90": 37865,
+      "P95": 45705,
+      "P99": 65536,
+      "top10_share": 0.2802,
+      "gini": 0.4346
+    },
+    "livecodebench": {
+      "n": 1500,
+      "P50": 5176,
+      "P90": 36571,
+      "P95": 48674,
+      "P99": 65536,
+      "top10_share": 0.4039,
+      "gini": 0.6275
+    }
+  },
+  "micro_macro": {
+    "low": {
+      "micro": 0.4943,
+      "macro": 0.5494
+    },
+    "high": {
+      "micro": 0.5015,
+      "macro": 0.5534
+    },
+    "max": {
+      "micro": 0.4977,
+      "macro": 0.5524
+    }
+  },
+  "competence_matched_benchmark": {
+    "table": [
+      {
+        "dataset": "math500",
+        "acc_low": 0.81,
+        "acc_high": 0.836,
+        "solvable_frac": 0.86,
+        "arr": 0.506
+      },
+      {
+        "dataset": "easy2hard_amc",
+        "acc_low": 0.75,
+        "acc_high": 0.782,
+        "solvable_frac": 0.79,
+        "arr": 0.36
+      },
+      {
+        "dataset": "zebralogic_grid",
+        "acc_low": 0.106,
+        "acc_high": 0.144,
+        "solvable_frac": 0.15,
+        "arr": 0.0
+      },
+      {
+        "dataset": "aime",
+        "acc_low": 0.967,
+        "acc_high": 0.947,
+        "solvable_frac": 1.0,
+        "arr": 0.53
+      },
+      {
+        "dataset": "gpqa_diamond",
+        "acc_low": 0.296,
+        "acc_high": 0.254,
+        "solvable_frac": 0.37,
+        "arr": 0.0
+      },
+      {
+        "dataset": "livecodebench",
+        "acc_low": 0.368,
+        "acc_high": 0.358,
+        "solvable_frac": 0.37,
+        "arr": 0.685
+      }
+    ],
+    "spearman": {
+      "acc_low": {
+        "spearman": 0.638,
+        "p": 0.1731
+      },
+      "acc_high": {
+        "spearman": 0.638,
+        "p": 0.1731
+      },
+      "solvable_frac": {
+        "spearman": 0.515,
+        "p": 0.2961
+      }
+    }
+  },
+  "competence_matched_stratum": {
+    "n": 20,
+    "spearman_acc_high_vs_arr": {
+      "spearman": 0.324,
+      "p": 0.1635
+    }
+  }
+}

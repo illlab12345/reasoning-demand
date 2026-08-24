@@ -1,0 +1,126 @@
+{
+  "generated_at": "2026-08-12T06:12:45.685941+00:00",
+  "datasets": {
+    "math500": {
+      "n": 500,
+      "unique_ids": 500,
+      "duplicate_ids": 0,
+      "missing_fields": {
+        "question": 0,
+        "answer": 0,
+        "source_id": 0,
+        "dataset": 0,
+        "domain": 0
+      },
+      "domain_counts": {
+        "math": 500
+      },
+      "metadata_keys": [
+        "level",
+        "split",
+        "subject"
+      ],
+      "difficulty": {
+        "present": 500,
+        "min": 1,
+        "max": 5,
+        "mean": 3.44
+      },
+      "answer_length": {
+        "min": 1,
+        "max": 53,
+        "mean": 5.93
+      }
+    },
+    "zebralogic": {
+      "n": 4259,
+      "unique_ids": 4259,
+      "duplicate_ids": 0,
+      "missing_fields": {
+        "question": 0,
+        "answer": 0,
+        "source_id": 0,
+        "dataset": 0,
+        "domain": 0
+      },
+      "domain_counts": {
+        "logic": 4259
+      },
+      "metadata_keys": [
+        "created_at",
+        "grid_size",
+        "mode",
+        "options",
+        "puzzle",
+        "solution"
+      ],
+      "difficulty": {
+        "present": 0,
+        "min": null,
+        "max": null,
+        "mean": null
+      },
+      "answer_length": {
+        "min": 3,
+        "max": 601,
+        "mean": 67.83
+      }
+    },
+    "easy2hard": {
+      "n": 92153,
+      "unique_ids": 92153,
+      "duplicate_ids": 0,
+      "missing_fields": {
+        "question": 0,
+        "answer": 0,
+        "source_id": 0,
+        "dataset": 0,
+        "domain": 0
+      },
+      "domain_counts": {
+        "math": 5294,
+        "reasoning": 1172,
+        "coding": 7657,
+        "chess": 76763,
+        "commonsense": 1267
+      },
+      "metadata_keys": [
+        "answer_san",
+        "answer_uci",
+        "contest",
+        "contest_id",
+        "detailed_tag",
+        "fen",
+        "init_num_moves",
+        "input_output",
+        "item_difficulty",
+        "model_avg_acc",
+        "month",
+        "options",
+        "original_tags",
+        "pgn",
+        "problem_index",
+        "rating_std",
+        "rating_volatility",
+        "sample_inputs",
+        "sample_outputs",
+        "split",
+        "subset",
+        "subtest",
+        "tag",
+        "year"
+      ],
+      "difficulty": {
+        "present": 92153,
+        "min": 0.0,
+        "max": 1.0,
+        "mean": 0.3229
+      },
+      "answer_length": {
+        "min": 1,
+        "max": 33425,
+        "mean": 56.06
+      }
+    }
+  }
+}

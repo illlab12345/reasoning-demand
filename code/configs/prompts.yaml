@@ -1,0 +1,49 @@
+# Versioned neutral prompts v0.1（冻结）
+# 注意：不同 reasoning setting 必须使用完全相同的 prompt；只改变 API 推理控制。
+schema_version: v0.1
+
+prompts:
+  math_v1:
+    version: v1
+    text: |
+      Solve the problem below. Provide the final answer only, in a line starting with "Answer:".
+
+      Problem:
+      {question}
+
+  zebra_grid_v1:
+    version: v1
+    text: |
+      Solve the logic grid puzzle below. Output the complete solution as a Markdown table with one row per house. The first column must be the house number, and each other column must be one characteristic. Use exactly the attribute values from the puzzle. Do not add explanations outside the table.
+
+      {question}
+
+  e2h_amc_v1:
+    version: v1
+    text: |
+      Solve the problem below. Provide the final answer only, in a line starting with "Answer:".
+
+      Problem:
+      {question}
+
+  aime_v1:
+    version: v1
+    text: |
+      Solve the problem below. Provide the final integer answer only, in a line starting with "Answer:".
+
+      Problem:
+      {question}
+
+  gpqa_v1:
+    version: v1
+    text: |
+      Answer the following multiple-choice question. Provide only the letter of the correct option (A, B, C, or D) in a line starting with "Answer:".
+
+      {question}
+
+  livecodebench_v1:
+    version: v1
+    text: |
+      Write a Python program that solves the programming problem below. Output only the complete program inside a python code block.
+
+      {question}

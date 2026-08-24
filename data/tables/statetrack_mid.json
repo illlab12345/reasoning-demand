@@ -1,0 +1,147 @@
+{
+  "design": {
+    "task": "parallel multi-variable tracking (6 steps, final sum)",
+    "factor": "state-tracking load k (number of simultaneously tracked variables)",
+    "levels": [
+      2,
+      4,
+      8
+    ],
+    "matched_bases": 20,
+    "repeats": 3,
+    "settings": [
+      "low",
+      "high",
+      "max"
+    ],
+    "max_validation": "k=8 variant of every base (20 items)",
+    "source": "C:\\Users\\29465\\Desktop\\token\\results\\metrics\\p1_probe_20260818T102103-279214.jsonl"
+  },
+  "trial": {
+    "2": {
+      "low": {
+        "n_trials": 60,
+        "accuracy": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "mean_rt": 590.8,
+        "median_rt": 535.5
+      },
+      "high": {
+        "n_trials": 60,
+        "accuracy": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "mean_rt": 352.7,
+        "median_rt": 328.0
+      },
+      "max": {}
+    },
+    "4": {
+      "low": {
+        "n_trials": 60,
+        "accuracy": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "mean_rt": 1403.8,
+        "median_rt": 1325.0
+      },
+      "high": {
+        "n_trials": 60,
+        "accuracy": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "mean_rt": 766.3,
+        "median_rt": 752.5
+      },
+      "max": {}
+    },
+    "8": {
+      "low": {
+        "n_trials": 60,
+        "accuracy": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "mean_rt": 2793.3,
+        "median_rt": 2613.0
+      },
+      "high": {
+        "n_trials": 60,
+        "accuracy": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "mean_rt": 1952.5,
+        "median_rt": 1706.5
+      },
+      "max": {
+        "n_trials": 60,
+        "accuracy": 1.0,
+        "ci": [
+          1.0,
+          1.0
+        ],
+        "mean_rt": 2557.5,
+        "median_rt": 2474.5
+      }
+    }
+  },
+  "item": {
+    "2": {
+      "n_items": 20,
+      "accuracy": {
+        "low": 1.0,
+        "high": 1.0,
+        "max": null
+      },
+      "paired_diff_high_minus_low": 0.0,
+      "paired_ci": [
+        0.0,
+        0.0
+      ],
+      "paired_ci_lower_onesided": 0.0,
+      "n_items_needing_high": 0
+    },
+    "4": {
+      "n_items": 20,
+      "accuracy": {
+        "low": 1.0,
+        "high": 1.0,
+        "max": null
+      },
+      "paired_diff_high_minus_low": 0.0,
+      "paired_ci": [
+        0.0,
+        0.0
+      ],
+      "paired_ci_lower_onesided": 0.0,
+      "n_items_needing_high": 0
+    },
+    "8": {
+      "n_items": 20,
+      "accuracy": {
+        "low": 1.0,
+        "high": 1.0,
+        "max": 1.0
+      },
+      "paired_diff_high_minus_low": 0.0,
+      "paired_ci": [
+        0.0,
+        0.0
+      ],
+      "paired_ci_lower_onesided": 0.0,
+      "n_items_needing_high": 0
+    }
+  }
+}

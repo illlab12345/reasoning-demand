@@ -1,0 +1,99 @@
+{
+  "n_items": 300,
+  "epsilon": 0.03,
+  "rule": "Router v3 (dev-frozen; cost-aware; savings threshold 5%)",
+  "reference": "Always High",
+  "domains": {
+    "MATH-500": {
+      "label": "MATH",
+      "n_items": 100,
+      "acc_diff": -0.02,
+      "ci_lo_onesided": -0.04,
+      "ci": [
+        -0.05,
+        0.0
+      ],
+      "token_saving": -0.0043,
+      "identical": 98,
+      "better": 0,
+      "worse": 2,
+      "assigned": {
+        "high": 60,
+        "low": 40
+      }
+    },
+    "Easy2Hard-Bench": {
+      "label": "E2H",
+      "n_items": 100,
+      "acc_diff": -0.01,
+      "ci_lo_onesided": -0.03,
+      "ci": [
+        -0.03,
+        0.0
+      ],
+      "token_saving": 0.1345,
+      "identical": 99,
+      "better": 0,
+      "worse": 1,
+      "assigned": {
+        "high": 80,
+        "low": 20
+      }
+    },
+    "ZebraLogicBench": {
+      "label": "Zebra",
+      "n_items": 50,
+      "acc_diff": 0.02,
+      "ci_lo_onesided": 0.0,
+      "ci": [
+        0.0,
+        0.06
+      ],
+      "token_saving": 0.1851,
+      "identical": 49,
+      "better": 1,
+      "worse": 0,
+      "assigned": {
+        "high": 30,
+        "low": 20
+      }
+    },
+    "LiveCodeBench": {
+      "label": "LCB",
+      "n_items": 50,
+      "acc_diff": 0.04,
+      "ci_lo_onesided": 0.0,
+      "ci": [
+        0.0,
+        0.1
+      ],
+      "token_saving": 0.4969,
+      "identical": 48,
+      "better": 2,
+      "worse": 0,
+      "assigned": {
+        "low": 34,
+        "max": 16
+      }
+    }
+  },
+  "pooled": {
+    "label": "Pooled",
+    "n_items": 300,
+    "acc_diff": 0.0,
+    "ci_lo_onesided": -0.0133,
+    "ci": [
+      -0.0167,
+      0.0167
+    ],
+    "token_saving": 0.3195,
+    "identical": 294,
+    "better": 3,
+    "worse": 3,
+    "assigned": {
+      "high": 170,
+      "low": 114,
+      "max": 16
+    }
+  }
+}

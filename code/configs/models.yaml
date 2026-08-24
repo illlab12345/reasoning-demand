@@ -1,0 +1,140 @@
+{
+  "schema_version": "v0.1",
+  "default_provider": "deepseek",
+  "providers": {
+    "deepseek": {
+      "name": "deepseek",
+      "base_url": "https://api.deepseek.com/",
+      "wire_api": "responses",
+      "api_key_env": "DEEPSEEK_API_KEY"
+    }
+  },
+  "models": {
+    "deepseek-v4-flash": {
+      "display_name": "DeepSeek-V4-Flash",
+      "provider": "deepseek",
+      "reasoning_control_type": "effort",
+      "reasoning_settings": [
+        "low",
+        "high",
+        "max"
+      ],
+      "default_reasoning_setting": "high",
+      "max_reasoning_setting": "max",
+      "capabilities": {
+        "supports_reasoning_effort": true,
+        "supports_reasoning_budget": false,
+        "reports_reasoning_tokens": true,
+        "exposes_reasoning_content": true,
+        "supports_temperature": true,
+        "supports_seed": false
+      },
+      "pricing_status": "confirmed",
+      "notes": "probed 2026-08-12: effort low/high/max, reasoning tokens reported, seed NOT supported",
+      "probe": {
+        "model": "deepseek-v4-flash",
+        "settings_probed": [
+          "low",
+          "high",
+          "max"
+        ],
+        "low_setting": "low",
+        "high_setting": "max",
+        "low_error": null,
+        "high_error": null,
+        "all_settings": {
+          "low": {
+            "error": null,
+            "reasoning_tokens": 244,
+            "output_tokens": 345
+          },
+          "high": {
+            "error": null,
+            "reasoning_tokens": 752,
+            "output_tokens": 980
+          },
+          "max": {
+            "error": null,
+            "reasoning_tokens": 701,
+            "output_tokens": 937
+          }
+        },
+        "low_reasoning_tokens": 244,
+        "high_reasoning_tokens": 701,
+        "low_output_tokens": 345,
+        "high_output_tokens": 937,
+        "reports_reasoning_tokens": true,
+        "reasoning_tokens_increase_with_effort": true,
+        "exposes_reasoning_content": true,
+        "model_version": "deepseek-v4-flash",
+        "eligible_for_primary_art": true,
+        "supports_temperature": true,
+        "supports_seed": false,
+        "probed_at": "2026-08-12T06:25:55.758966+00:00"
+      }
+    },
+    "deepseek-v4-pro": {
+      "display_name": "DeepSeek-V4-Pro",
+      "provider": "deepseek",
+      "reasoning_control_type": "effort",
+      "reasoning_settings": [
+        "low",
+        "high",
+        "max"
+      ],
+      "default_reasoning_setting": "high",
+      "max_reasoning_setting": "max",
+      "capabilities": {
+        "supports_reasoning_effort": true,
+        "supports_reasoning_budget": false,
+        "reports_reasoning_tokens": true,
+        "exposes_reasoning_content": true,
+        "supports_temperature": true,
+        "supports_seed": true
+      },
+      "pricing_status": "confirmed",
+      "notes": "UNAVAILABLE: API returns 400 (Codex integration with deepseek-v4-pro expected early Aug 2026); re-probe before use",
+      "probe": {
+        "model": "deepseek-v4-pro",
+        "settings_probed": [
+          "low",
+          "high",
+          "max"
+        ],
+        "low_setting": "low",
+        "high_setting": "max",
+        "low_error": null,
+        "high_error": null,
+        "all_settings": {
+          "low": {
+            "error": null,
+            "reasoning_tokens": 174,
+            "output_tokens": 413
+          },
+          "high": {
+            "error": null,
+            "reasoning_tokens": 409,
+            "output_tokens": 686
+          },
+          "max": {
+            "error": null,
+            "reasoning_tokens": 426,
+            "output_tokens": 719
+          }
+        },
+        "low_reasoning_tokens": 174,
+        "high_reasoning_tokens": 426,
+        "low_output_tokens": 413,
+        "high_output_tokens": 719,
+        "reports_reasoning_tokens": true,
+        "reasoning_tokens_increase_with_effort": true,
+        "exposes_reasoning_content": true,
+        "model_version": "deepseek-v4-pro",
+        "eligible_for_primary_art": true,
+        "supports_temperature": true,
+        "supports_seed": false,
+        "probed_at": "2026-08-12T16:31:32.857452+00:00"
+      }
+    }
+  }
+}

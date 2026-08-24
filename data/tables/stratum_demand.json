@@ -1,0 +1,541 @@
+{
+  "epsilon": 0.03,
+  "criterion": "A* = max observed acc; qualified = {s: acc_s >= A* - eps}; r*_eps = argmin mean reasoning tokens among qualified",
+  "strata": {
+    "math500": {
+      "1": {
+        "n": 20,
+        "acc": {
+          "low": 0.82,
+          "high": 0.87,
+          "max": 0.83
+        },
+        "mean_rt": {
+          "low": 410.6,
+          "high": 438.1,
+          "max": 819.8
+        },
+        "a_star": 0.87,
+        "qualified": [
+          "high"
+        ],
+        "r_star": "high",
+        "r_star_rank": 2,
+        "saving_vs_max": 0.4656
+      },
+      "2": {
+        "n": 20,
+        "acc": {
+          "low": 0.85,
+          "high": 0.87,
+          "max": 0.84
+        },
+        "mean_rt": {
+          "low": 440.2,
+          "high": 301.2,
+          "max": 577.2
+        },
+        "a_star": 0.87,
+        "qualified": [
+          "low",
+          "high",
+          "max"
+        ],
+        "r_star": "high",
+        "r_star_rank": 2,
+        "saving_vs_max": 0.4782
+      },
+      "3": {
+        "n": 20,
+        "acc": {
+          "low": 0.89,
+          "high": 0.92,
+          "max": 0.89
+        },
+        "mean_rt": {
+          "low": 336.9,
+          "high": 241.3,
+          "max": 358.7
+        },
+        "a_star": 0.92,
+        "qualified": [
+          "low",
+          "high",
+          "max"
+        ],
+        "r_star": "high",
+        "r_star_rank": 2,
+        "saving_vs_max": 0.3273
+      },
+      "4": {
+        "n": 20,
+        "acc": {
+          "low": 0.8,
+          "high": 0.8,
+          "max": 0.75
+        },
+        "mean_rt": {
+          "low": 1120.6,
+          "high": 1526.8,
+          "max": 2409.7
+        },
+        "a_star": 0.8,
+        "qualified": [
+          "low",
+          "high"
+        ],
+        "r_star": "low",
+        "r_star_rank": 1,
+        "saving_vs_max": 0.535
+      },
+      "5": {
+        "n": 20,
+        "acc": {
+          "low": 0.69,
+          "high": 0.72,
+          "max": 0.67
+        },
+        "mean_rt": {
+          "low": 1823.0,
+          "high": 1943.4,
+          "max": 4202.9
+        },
+        "a_star": 0.72,
+        "qualified": [
+          "low",
+          "high"
+        ],
+        "r_star": "low",
+        "r_star_rank": 1,
+        "saving_vs_max": 0.5663
+      }
+    },
+    "easy2hard_amc": {
+      "1": {
+        "n": 20,
+        "acc": {
+          "low": 0.74,
+          "high": 0.77,
+          "max": 0.77
+        },
+        "mean_rt": {
+          "low": 1905.4,
+          "high": 1295.3,
+          "max": 2804.1
+        },
+        "a_star": 0.77,
+        "qualified": [
+          "low",
+          "high",
+          "max"
+        ],
+        "r_star": "high",
+        "r_star_rank": 2,
+        "saving_vs_max": 0.5381
+      },
+      "2": {
+        "n": 20,
+        "acc": {
+          "low": 0.86,
+          "high": 0.9,
+          "max": 0.87
+        },
+        "mean_rt": {
+          "low": 2312.0,
+          "high": 2324.3,
+          "max": 4087.1
+        },
+        "a_star": 0.9,
+        "qualified": [
+          "high",
+          "max"
+        ],
+        "r_star": "high",
+        "r_star_rank": 2,
+        "saving_vs_max": 0.4313
+      },
+      "3": {
+        "n": 20,
+        "acc": {
+          "low": 0.55,
+          "high": 0.6,
+          "max": 0.61
+        },
+        "mean_rt": {
+          "low": 3954.8,
+          "high": 5890.8,
+          "max": 10922.8
+        },
+        "a_star": 0.61,
+        "qualified": [
+          "high",
+          "max"
+        ],
+        "r_star": "high",
+        "r_star_rank": 2,
+        "saving_vs_max": 0.4607
+      },
+      "4": {
+        "n": 20,
+        "acc": {
+          "low": 0.85,
+          "high": 0.88,
+          "max": 0.85
+        },
+        "mean_rt": {
+          "low": 7489.1,
+          "high": 11028.5,
+          "max": 16041.7
+        },
+        "a_star": 0.88,
+        "qualified": [
+          "low",
+          "high",
+          "max"
+        ],
+        "r_star": "low",
+        "r_star_rank": 1,
+        "saving_vs_max": 0.5331
+      },
+      "5": {
+        "n": 20,
+        "acc": {
+          "low": 0.75,
+          "high": 0.76,
+          "max": 0.72
+        },
+        "mean_rt": {
+          "low": 7337.5,
+          "high": 11513.3,
+          "max": 16245.6
+        },
+        "a_star": 0.76,
+        "qualified": [
+          "low",
+          "high"
+        ],
+        "r_star": "low",
+        "r_star_rank": 1,
+        "saving_vs_max": 0.5483
+      }
+    },
+    "zebralogic_grid": {
+      "1": {
+        "n": 20,
+        "acc": {
+          "low": 0.1,
+          "high": 0.15,
+          "max": 0.12
+        },
+        "mean_rt": {
+          "low": 711.3,
+          "high": 658.9,
+          "max": 814.5
+        },
+        "a_star": 0.15,
+        "qualified": [
+          "high",
+          "max"
+        ],
+        "r_star": "high",
+        "r_star_rank": 2,
+        "saving_vs_max": 0.191
+      },
+      "2": {
+        "n": 20,
+        "acc": {
+          "low": 0.17,
+          "high": 0.24,
+          "max": 0.19
+        },
+        "mean_rt": {
+          "low": 1959.1,
+          "high": 2264.5,
+          "max": 2751.2
+        },
+        "a_star": 0.24,
+        "qualified": [
+          "high"
+        ],
+        "r_star": "high",
+        "r_star_rank": 2,
+        "saving_vs_max": 0.1769
+      },
+      "3": {
+        "n": 20,
+        "acc": {
+          "low": 0.17,
+          "high": 0.18,
+          "max": 0.13
+        },
+        "mean_rt": {
+          "low": 2153.1,
+          "high": 2710.4,
+          "max": 3074.5
+        },
+        "a_star": 0.18,
+        "qualified": [
+          "low",
+          "high"
+        ],
+        "r_star": "low",
+        "r_star_rank": 1,
+        "saving_vs_max": 0.2997
+      },
+      "4": {
+        "n": 20,
+        "acc": {
+          "low": 0.03,
+          "high": 0.11,
+          "max": 0.11
+        },
+        "mean_rt": {
+          "low": 5229.7,
+          "high": 8179.7,
+          "max": 7961.3
+        },
+        "a_star": 0.11,
+        "qualified": [
+          "high",
+          "max"
+        ],
+        "r_star": "max",
+        "r_star_rank": 3,
+        "saving_vs_max": 0.0
+      },
+      "5": {
+        "n": 20,
+        "acc": {
+          "low": 0.06,
+          "high": 0.04,
+          "max": 0.04
+        },
+        "mean_rt": {
+          "low": 9677.5,
+          "high": 14865.6,
+          "max": 13327.8
+        },
+        "a_star": 0.06,
+        "qualified": [
+          "low",
+          "high",
+          "max"
+        ],
+        "r_star": "low",
+        "r_star_rank": 1,
+        "saving_vs_max": 0.2739
+      }
+    },
+    "aime": {
+      "1": {
+        "n": 30,
+        "acc": {
+          "low": 0.967,
+          "high": 0.947,
+          "max": 0.967
+        },
+        "mean_rt": {
+          "low": 8262.3,
+          "high": 11657.6,
+          "max": 17590.9
+        },
+        "a_star": 0.967,
+        "qualified": [
+          "low",
+          "high",
+          "max"
+        ],
+        "r_star": "low",
+        "r_star_rank": 1,
+        "saving_vs_max": 0.5303
+      }
+    },
+    "gpqa_diamond": {
+      "1": {
+        "n": 100,
+        "acc": {
+          "low": 0.296,
+          "high": 0.254,
+          "max": 0.298
+        },
+        "mean_rt": {
+          "low": 11726.0,
+          "high": 15771.1,
+          "max": 24268.8
+        },
+        "a_star": 0.298,
+        "qualified": [
+          "low",
+          "max"
+        ],
+        "r_star": "low",
+        "r_star_rank": 1,
+        "saving_vs_max": 0.5168
+      }
+    },
+    "livecodebench": {
+      "easy": {
+        "n": 35,
+        "acc": {
+          "low": 0.429,
+          "high": 0.429,
+          "max": 0.429
+        },
+        "mean_rt": {
+          "low": 1145.6,
+          "high": 3323.2,
+          "max": 2427.8
+        },
+        "a_star": 0.429,
+        "qualified": [
+          "low",
+          "high",
+          "max"
+        ],
+        "r_star": "low",
+        "r_star_rank": 1,
+        "saving_vs_max": 0.5281
+      },
+      "hard": {
+        "n": 22,
+        "acc": {
+          "low": 0.264,
+          "high": 0.218,
+          "max": 0.3
+        },
+        "mean_rt": {
+          "low": 9591.5,
+          "high": 44738.6,
+          "max": 32047.8
+        },
+        "a_star": 0.3,
+        "qualified": [
+          "max"
+        ],
+        "r_star": "max",
+        "r_star_rank": 3,
+        "saving_vs_max": 0.0
+      },
+      "medium": {
+        "n": 43,
+        "acc": {
+          "low": 0.372,
+          "high": 0.372,
+          "max": 0.363
+        },
+        "mean_rt": {
+          "low": 4207.6,
+          "high": 20035.3,
+          "max": 13538.5
+        },
+        "a_star": 0.372,
+        "qualified": [
+          "low",
+          "high",
+          "max"
+        ],
+        "r_star": "low",
+        "r_star_rank": 1,
+        "saving_vs_max": 0.6892
+      }
+    }
+  },
+  "benchmark": {
+    "math500": {
+      "n_items": 100,
+      "a_star": 0.836,
+      "qualified": [
+        "low",
+        "high"
+      ],
+      "r_star": "low",
+      "r_star_rank": 1,
+      "saving_vs_max": 0.5063
+    },
+    "easy2hard_amc": {
+      "n_items": 100,
+      "a_star": 0.782,
+      "qualified": [
+        "high",
+        "max"
+      ],
+      "r_star": "high",
+      "r_star_rank": 2,
+      "saving_vs_max": 0.3603
+    },
+    "zebralogic_grid": {
+      "n_items": 100,
+      "a_star": 0.144,
+      "qualified": [
+        "high",
+        "max"
+      ],
+      "r_star": "max",
+      "r_star_rank": 3,
+      "saving_vs_max": 0.0
+    },
+    "aime": {
+      "n_items": 30,
+      "a_star": 0.967,
+      "qualified": [
+        "low",
+        "high",
+        "max"
+      ],
+      "r_star": "low",
+      "r_star_rank": 1,
+      "saving_vs_max": 0.5303
+    },
+    "gpqa_diamond": {
+      "n_items": 100,
+      "a_star": 0.298,
+      "qualified": [
+        "low",
+        "max"
+      ],
+      "r_star": "low",
+      "r_star_rank": 1,
+      "saving_vs_max": 0.5168
+    },
+    "livecodebench": {
+      "n_items": 100,
+      "a_star": 0.372,
+      "qualified": [
+        "low",
+        "high",
+        "max"
+      ],
+      "r_star": "low",
+      "r_star_rank": 1,
+      "saving_vs_max": 0.6852
+    }
+  },
+  "matrix": {
+    "math500": [
+      "high",
+      "high",
+      "high",
+      "low",
+      "low"
+    ],
+    "easy2hard_amc": [
+      "high",
+      "high",
+      "high",
+      "low",
+      "low"
+    ],
+    "zebralogic_grid": [
+      "high",
+      "high",
+      "low",
+      "max",
+      "low"
+    ],
+    "livecodebench": [
+      "low",
+      "low",
+      "max"
+    ]
+  }
+}

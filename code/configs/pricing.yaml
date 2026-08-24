@@ -1,0 +1,25 @@
+# Token pricing v0.2
+# 单价单位：USD per 1M tokens。来源：DeepSeek 官方 API docs（2026-08-12 确认）。
+# 计费口径：输入按缓存未命中价格（保守）；reasoning tokens 计入输出价格。
+schema_version: v0.1
+currency: USD
+
+prices_per_million_tokens:
+  deepseek-v4-flash:
+    input_cache_hit: 0.0028
+    input_cache_miss: 0.14
+    output: 0.28
+    reasoning: same_as_output
+    status: confirmed
+    source: https://api-docs.deepseek.com/quick_start/pricing/
+    confirmed_at: "2026-08-12"
+    cost_basis: input_cache_miss + output (reasoning included at output price)
+  deepseek-v4-pro:
+    input_cache_hit: 0.003625
+    input_cache_miss: 0.435
+    output: 0.87
+    reasoning: same_as_output
+    status: confirmed
+    source: https://api-docs.deepseek.com/quick_start/pricing/
+    confirmed_at: "2026-08-12"
+    cost_basis: input_cache_miss + output (reasoning included at output price)

@@ -1,0 +1,1305 @@
+{
+  "n_samples": 530,
+  "n_trials": 7950,
+  "epsilon": 0.03,
+  "population": {
+    "math500": {
+      "low": {
+        "n_items": 100,
+        "accuracy": 0.81,
+        "ci": [
+          0.736,
+          0.876
+        ],
+        "mean_rt": 826.3,
+        "median_rt": 178.0
+      },
+      "high": {
+        "n_items": 100,
+        "accuracy": 0.836,
+        "ci": [
+          0.774,
+          0.896
+        ],
+        "mean_rt": 890.2,
+        "median_rt": 163.5
+      },
+      "max": {
+        "n_items": 100,
+        "accuracy": 0.796,
+        "ci": [
+          0.724,
+          0.862
+        ],
+        "mean_rt": 1673.7,
+        "median_rt": 194.5
+      }
+    },
+    "easy2hard_amc": {
+      "low": {
+        "n_items": 100,
+        "accuracy": 0.75,
+        "ci": [
+          0.666,
+          0.822
+        ],
+        "mean_rt": 4599.8,
+        "median_rt": 1975.5
+      },
+      "high": {
+        "n_items": 100,
+        "accuracy": 0.782,
+        "ci": [
+          0.7,
+          0.856
+        ],
+        "mean_rt": 6410.4,
+        "median_rt": 1901.0
+      },
+      "max": {
+        "n_items": 100,
+        "accuracy": 0.764,
+        "ci": [
+          0.682,
+          0.842
+        ],
+        "mean_rt": 10020.3,
+        "median_rt": 3888.5
+      }
+    },
+    "zebralogic_grid": {
+      "low": {
+        "n_items": 100,
+        "accuracy": 0.106,
+        "ci": [
+          0.058,
+          0.156
+        ],
+        "mean_rt": 3946.2,
+        "median_rt": 2369.5
+      },
+      "high": {
+        "n_items": 100,
+        "accuracy": 0.144,
+        "ci": [
+          0.09,
+          0.206
+        ],
+        "mean_rt": 5735.8,
+        "median_rt": 2990.5
+      },
+      "max": {
+        "n_items": 100,
+        "accuracy": 0.118,
+        "ci": [
+          0.064,
+          0.174
+        ],
+        "mean_rt": 5585.9,
+        "median_rt": 3081.5
+      }
+    },
+    "aime": {
+      "low": {
+        "n_items": 30,
+        "accuracy": 0.967,
+        "ci": [
+          0.913,
+          1.0
+        ],
+        "mean_rt": 8262.3,
+        "median_rt": 4212.0
+      },
+      "high": {
+        "n_items": 30,
+        "accuracy": 0.947,
+        "ci": [
+          0.867,
+          1.0
+        ],
+        "mean_rt": 11657.6,
+        "median_rt": 5330.5
+      },
+      "max": {
+        "n_items": 30,
+        "accuracy": 0.967,
+        "ci": [
+          0.927,
+          1.0
+        ],
+        "mean_rt": 17590.9,
+        "median_rt": 11911.0
+      }
+    },
+    "gpqa_diamond": {
+      "low": {
+        "n_items": 100,
+        "accuracy": 0.296,
+        "ci": [
+          0.23,
+          0.356
+        ],
+        "mean_rt": 11726.0,
+        "median_rt": 10028.5
+      },
+      "high": {
+        "n_items": 100,
+        "accuracy": 0.254,
+        "ci": [
+          0.198,
+          0.314
+        ],
+        "mean_rt": 15771.1,
+        "median_rt": 10224.5
+      },
+      "max": {
+        "n_items": 100,
+        "accuracy": 0.298,
+        "ci": [
+          0.234,
+          0.362
+        ],
+        "mean_rt": 24268.8,
+        "median_rt": 21004.0
+      }
+    },
+    "livecodebench": {
+      "low": {
+        "n_items": 100,
+        "accuracy": 0.368,
+        "ci": [
+          0.284,
+          0.468
+        ],
+        "mean_rt": 4320.3,
+        "median_rt": 2330.0
+      },
+      "high": {
+        "n_items": 100,
+        "accuracy": 0.358,
+        "ci": [
+          0.264,
+          0.45
+        ],
+        "mean_rt": 19620.8,
+        "median_rt": 13935.0
+      },
+      "max": {
+        "n_items": 100,
+        "accuracy": 0.372,
+        "ci": [
+          0.28,
+          0.462
+        ],
+        "mean_rt": 13721.8,
+        "median_rt": 7528.5
+      }
+    }
+  },
+  "ni": {
+    "math500": {
+      "low": {
+        "diff": 0.014,
+        "ci_lo": -0.008,
+        "ni": true,
+        "save": 847.4,
+        "flips": [
+          3,
+          0
+        ]
+      },
+      "high": {
+        "diff": 0.04,
+        "ci_lo": 0.014,
+        "ni": true,
+        "save": 783.5,
+        "flips": [
+          5,
+          1
+        ]
+      }
+    },
+    "easy2hard_amc": {
+      "low": {
+        "diff": -0.014,
+        "ci_lo": -0.046,
+        "ni": false,
+        "save": 5420.5,
+        "flips": [
+          0,
+          2
+        ]
+      },
+      "high": {
+        "diff": 0.018,
+        "ci_lo": -0.01,
+        "ni": true,
+        "save": 3609.8,
+        "flips": [
+          1,
+          1
+        ]
+      }
+    },
+    "zebralogic_grid": {
+      "low": {
+        "diff": -0.012,
+        "ci_lo": -0.044,
+        "ni": false,
+        "save": 1639.7,
+        "flips": [
+          3,
+          3
+        ]
+      },
+      "high": {
+        "diff": 0.026,
+        "ci_lo": 0.008,
+        "ni": true,
+        "save": -150.0,
+        "flips": [
+          5,
+          0
+        ]
+      }
+    },
+    "aime": {
+      "low": {
+        "diff": 0.0,
+        "ci_lo": -0.02,
+        "ni": true,
+        "save": 9328.6,
+        "flips": [
+          0,
+          1
+        ]
+      },
+      "high": {
+        "diff": -0.02,
+        "ci_lo": -0.06,
+        "ni": false,
+        "save": 5933.3,
+        "flips": [
+          0,
+          1
+        ]
+      }
+    },
+    "gpqa_diamond": {
+      "low": {
+        "diff": -0.002,
+        "ci_lo": -0.042,
+        "ni": false,
+        "save": 12542.8,
+        "flips": [
+          8,
+          8
+        ]
+      },
+      "high": {
+        "diff": -0.044,
+        "ci_lo": -0.09,
+        "ni": false,
+        "save": 8497.7,
+        "flips": [
+          5,
+          14
+        ]
+      }
+    },
+    "livecodebench": {
+      "low": {
+        "diff": -0.004,
+        "ci_lo": -0.016,
+        "ni": true,
+        "save": 9401.5,
+        "flips": [
+          0,
+          0
+        ]
+      },
+      "high": {
+        "diff": -0.014,
+        "ci_lo": -0.036,
+        "ni": false,
+        "save": -5898.9,
+        "flips": [
+          0,
+          2
+        ]
+      }
+    }
+  },
+  "mru": {
+    "math500": {
+      "low_high": 0.4069,
+      "high_max": -0.0511
+    },
+    "easy2hard_amc": {
+      "low_high": 0.0177,
+      "high_max": -0.005
+    },
+    "zebralogic_grid": {
+      "low_high": 0.0212,
+      "high_max": null
+    },
+    "aime": {
+      "low_high": -0.0059,
+      "high_max": 0.0034
+    },
+    "gpqa_diamond": {
+      "low_high": -0.0104,
+      "high_max": 0.0052
+    },
+    "livecodebench": {
+      "low_high": -0.0007,
+      "high_max": null
+    }
+  },
+  "stratum": {
+    "math500": {
+      "1": {
+        "n": 20,
+        "acc": {
+          "low": 0.82,
+          "high": 0.87,
+          "max": 0.83
+        },
+        "rt": {
+          "low": 410.6,
+          "high": 438.1,
+          "max": 819.8
+        },
+        "msrb": "high",
+        "arr": 0.4656
+      },
+      "2": {
+        "n": 20,
+        "acc": {
+          "low": 0.85,
+          "high": 0.87,
+          "max": 0.84
+        },
+        "rt": {
+          "low": 440.2,
+          "high": 301.2,
+          "max": 577.2
+        },
+        "msrb": "high",
+        "arr": 0.4782
+      },
+      "3": {
+        "n": 20,
+        "acc": {
+          "low": 0.89,
+          "high": 0.92,
+          "max": 0.89
+        },
+        "rt": {
+          "low": 336.9,
+          "high": 241.3,
+          "max": 358.7
+        },
+        "msrb": "max",
+        "arr": 0.0
+      },
+      "4": {
+        "n": 20,
+        "acc": {
+          "low": 0.8,
+          "high": 0.8,
+          "max": 0.75
+        },
+        "rt": {
+          "low": 1120.6,
+          "high": 1526.8,
+          "max": 2409.7
+        },
+        "msrb": "low",
+        "arr": 0.535
+      },
+      "5": {
+        "n": 20,
+        "acc": {
+          "low": 0.69,
+          "high": 0.72,
+          "max": 0.67
+        },
+        "rt": {
+          "low": 1823.0,
+          "high": 1943.4,
+          "max": 4202.9
+        },
+        "msrb": "low",
+        "arr": 0.5663
+      }
+    },
+    "easy2hard_amc": {
+      "1": {
+        "n": 20,
+        "acc": {
+          "low": 0.74,
+          "high": 0.77,
+          "max": 0.77
+        },
+        "rt": {
+          "low": 1905.4,
+          "high": 1295.3,
+          "max": 2804.1
+        },
+        "msrb": "max",
+        "arr": 0.0
+      },
+      "2": {
+        "n": 20,
+        "acc": {
+          "low": 0.86,
+          "high": 0.9,
+          "max": 0.87
+        },
+        "rt": {
+          "low": 2312.0,
+          "high": 2324.3,
+          "max": 4087.1
+        },
+        "msrb": "high",
+        "arr": 0.4313
+      },
+      "3": {
+        "n": 20,
+        "acc": {
+          "low": 0.55,
+          "high": 0.6,
+          "max": 0.61
+        },
+        "rt": {
+          "low": 3954.8,
+          "high": 5890.8,
+          "max": 10922.8
+        },
+        "msrb": "max",
+        "arr": 0.0
+      },
+      "4": {
+        "n": 20,
+        "acc": {
+          "low": 0.85,
+          "high": 0.88,
+          "max": 0.85
+        },
+        "rt": {
+          "low": 7489.1,
+          "high": 11028.5,
+          "max": 16041.7
+        },
+        "msrb": "low",
+        "arr": 0.5331
+      },
+      "5": {
+        "n": 20,
+        "acc": {
+          "low": 0.75,
+          "high": 0.76,
+          "max": 0.72
+        },
+        "rt": {
+          "low": 7337.5,
+          "high": 11513.3,
+          "max": 16245.6
+        },
+        "msrb": "low",
+        "arr": 0.5483
+      }
+    },
+    "zebralogic_grid": {
+      "1": {
+        "n": 20,
+        "acc": {
+          "low": 0.1,
+          "high": 0.15,
+          "max": 0.12
+        },
+        "rt": {
+          "low": 711.3,
+          "high": 658.9,
+          "max": 814.5
+        },
+        "msrb": "high",
+        "arr": 0.191
+      },
+      "2": {
+        "n": 20,
+        "acc": {
+          "low": 0.17,
+          "high": 0.24,
+          "max": 0.19
+        },
+        "rt": {
+          "low": 1959.1,
+          "high": 2264.5,
+          "max": 2751.2
+        },
+        "msrb": "high",
+        "arr": 0.1769
+      },
+      "3": {
+        "n": 20,
+        "acc": {
+          "low": 0.17,
+          "high": 0.18,
+          "max": 0.13
+        },
+        "rt": {
+          "low": 2153.1,
+          "high": 2710.4,
+          "max": 3074.5
+        },
+        "msrb": "low",
+        "arr": 0.2997
+      },
+      "4": {
+        "n": 20,
+        "acc": {
+          "low": 0.03,
+          "high": 0.11,
+          "max": 0.11
+        },
+        "rt": {
+          "low": 5229.7,
+          "high": 8179.7,
+          "max": 7961.3
+        },
+        "msrb": "max",
+        "arr": 0.0
+      },
+      "5": {
+        "n": 20,
+        "acc": {
+          "low": 0.06,
+          "high": 0.04,
+          "max": 0.04
+        },
+        "rt": {
+          "low": 9677.5,
+          "high": 14865.6,
+          "max": 13327.8
+        },
+        "msrb": "low",
+        "arr": 0.2739
+      }
+    },
+    "aime": {
+      "1": {
+        "n": 30,
+        "acc": {
+          "low": 0.967,
+          "high": 0.947,
+          "max": 0.967
+        },
+        "rt": {
+          "low": 8262.3,
+          "high": 11657.6,
+          "max": 17590.9
+        },
+        "msrb": "low",
+        "arr": 0.5303
+      }
+    },
+    "gpqa_diamond": {
+      "1": {
+        "n": 100,
+        "acc": {
+          "low": 0.296,
+          "high": 0.254,
+          "max": 0.298
+        },
+        "rt": {
+          "low": 11726.0,
+          "high": 15771.1,
+          "max": 24268.8
+        },
+        "msrb": "max",
+        "arr": 0.0
+      }
+    },
+    "livecodebench": {
+      "easy": {
+        "n": 35,
+        "acc": {
+          "low": 0.429,
+          "high": 0.429,
+          "max": 0.429
+        },
+        "rt": {
+          "low": 1145.6,
+          "high": 3323.2,
+          "max": 2427.8
+        },
+        "msrb": "low",
+        "arr": 0.5281
+      },
+      "hard": {
+        "n": 22,
+        "acc": {
+          "low": 0.264,
+          "high": 0.218,
+          "max": 0.3
+        },
+        "rt": {
+          "low": 9591.5,
+          "high": 44738.6,
+          "max": 32047.8
+        },
+        "msrb": "max",
+        "arr": 0.0
+      },
+      "medium": {
+        "n": 43,
+        "acc": {
+          "low": 0.372,
+          "high": 0.372,
+          "max": 0.363
+        },
+        "rt": {
+          "low": 4207.6,
+          "high": 20035.3,
+          "max": 13538.5
+        },
+        "msrb": "low",
+        "arr": 0.6892
+      }
+    }
+  },
+  "waste": {
+    "math500": {
+      "low->high": {
+        "n": 81,
+        "mean": 105.2,
+        "median": -5.4,
+        "total": 8524.0,
+        "overhead": 0.1562
+      },
+      "low->max": {
+        "n": 80,
+        "mean": 671.6,
+        "median": 5.8,
+        "total": 53725.0,
+        "overhead": 0.4952
+      },
+      "high->max": {
+        "n": 79,
+        "mean": 572.5,
+        "median": 20.2,
+        "total": 45230.6,
+        "overhead": 0.3428
+      }
+    },
+    "easy2hard_amc": {
+      "low->high": {
+        "n": 76,
+        "mean": 1608.0,
+        "median": 266.1,
+        "total": 122208.8,
+        "overhead": 0.2219
+      },
+      "low->max": {
+        "n": 76,
+        "mean": 4455.1,
+        "median": 1071.7,
+        "total": 338585.4,
+        "overhead": 0.9958
+      },
+      "high->max": {
+        "n": 77,
+        "mean": 2810.6,
+        "median": 953.0,
+        "total": 216419.0,
+        "overhead": 0.7446
+      }
+    },
+    "zebralogic_grid": {
+      "low->high": {
+        "n": 10,
+        "mean": 263.0,
+        "median": -58.7,
+        "total": 2629.8,
+        "overhead": 0.0427
+      },
+      "low->max": {
+        "n": 7,
+        "mean": 527.3,
+        "median": 353.8,
+        "total": 3691.0,
+        "overhead": 0.2155
+      },
+      "high->max": {
+        "n": 10,
+        "mean": 482.3,
+        "median": 498.0,
+        "total": 4823.2,
+        "overhead": 0.2484
+      }
+    },
+    "aime": {
+      "low->high": {
+        "n": 28,
+        "mean": 2744.2,
+        "median": 814.7,
+        "total": 76837.2,
+        "overhead": 0.3414
+      },
+      "low->max": {
+        "n": 29,
+        "mean": 8554.1,
+        "median": 8012.6,
+        "total": 248068.4,
+        "overhead": 1.5175
+      },
+      "high->max": {
+        "n": 29,
+        "mean": 5701.2,
+        "median": 5019.4,
+        "total": 165334.0,
+        "overhead": 1.0043
+      }
+    },
+    "gpqa_diamond": {
+      "low->high": {
+        "n": 13,
+        "mean": -964.0,
+        "median": -1062.6,
+        "total": -12532.4,
+        "overhead": -0.1784
+      },
+      "low->max": {
+        "n": 18,
+        "mean": 8845.8,
+        "median": 7528.8,
+        "total": 159224.6,
+        "overhead": 0.8796
+      },
+      "high->max": {
+        "n": 12,
+        "mean": 5377.6,
+        "median": 5071.1,
+        "total": 64530.8,
+        "overhead": 2.6449
+      }
+    },
+    "livecodebench": {
+      "low->high": {
+        "n": 35,
+        "mean": 13206.3,
+        "median": 13156.8,
+        "total": 462219.2,
+        "overhead": 4.3861
+      },
+      "low->max": {
+        "n": 37,
+        "mean": 9218.8,
+        "median": 6900.2,
+        "total": 341094.8,
+        "overhead": 2.5596
+      },
+      "high->max": {
+        "n": 35,
+        "mean": -5121.6,
+        "median": -4095.4,
+        "total": -179257.0,
+        "overhead": -0.1934
+      }
+    }
+  },
+  "waste_pooled": {
+    "low->high": {
+      "n": 243,
+      "total": 659886.6,
+      "mean": 2715.6
+    },
+    "low->max": {
+      "n": 247,
+      "total": 1144389.2,
+      "mean": 4633.2
+    },
+    "high->max": {
+      "n": 242,
+      "total": 317080.6,
+      "mean": 1310.3
+    }
+  },
+  "router_global": {
+    "always_low": {
+      "accuracy": 0.494,
+      "mean_rt": 5263.6,
+      "mean_cost_usd": 0.001521,
+      "mean_latency_ms": 96956.9,
+      "token_reduction_vs_max": 0.5393,
+      "acc_diff_vs_max": -0.004
+    },
+    "always_high": {
+      "accuracy": 0.502,
+      "mean_rt": 9797.3,
+      "mean_cost_usd": 0.0028,
+      "mean_latency_ms": 152417.9,
+      "token_reduction_vs_max": 0.1424,
+      "acc_diff_vs_max": 0.004
+    },
+    "always_max": {
+      "accuracy": 0.498,
+      "mean_rt": 11424.1,
+      "mean_cost_usd": 0.003259,
+      "mean_latency_ms": 140319.9,
+      "token_reduction_vs_max": 0.0,
+      "acc_diff_vs_max": 0.0
+    },
+    "stratum_router": {
+      "accuracy": 0.511,
+      "mean_rt": 8968.9,
+      "mean_cost_usd": 0.002566,
+      "mean_latency_ms": 115170.8,
+      "token_reduction_vs_max": 0.2149,
+      "acc_diff_vs_max": 0.013
+    },
+    "ml_router_cv": {
+      "accuracy": 0.494,
+      "mean_rt": 6653.0,
+      "mean_cost_usd": 0.001917,
+      "mean_latency_ms": 96419.8,
+      "token_reduction_vs_max": 0.4176,
+      "acc_diff_vs_max": -0.004
+    },
+    "ml_router_lodo": {
+      "accuracy": 0.489,
+      "mean_rt": 6973.1,
+      "mean_cost_usd": 0.002008,
+      "mean_latency_ms": 120583.7,
+      "token_reduction_vs_max": 0.3896,
+      "acc_diff_vs_max": -0.009
+    },
+    "oracle": {
+      "accuracy": 0.515,
+      "mean_rt": 5588.9,
+      "mean_cost_usd": 0.001613,
+      "mean_latency_ms": 113302.2,
+      "token_reduction_vs_max": 0.5108,
+      "acc_diff_vs_max": 0.017
+    }
+  },
+  "router_per_domain": {
+    "always_low": {
+      "math500": {
+        "accuracy": 0.81,
+        "mean_rt": 826.3,
+        "mean_cost_usd": 0.000245,
+        "mean_latency_ms": 8060.2,
+        "token_reduction_vs_max": 0.5063,
+        "acc_diff_vs_max": 0.014
+      },
+      "easy2hard_amc": {
+        "accuracy": 0.75,
+        "mean_rt": 4599.8,
+        "mean_cost_usd": 0.001306,
+        "mean_latency_ms": 49771.8,
+        "token_reduction_vs_max": 0.541,
+        "acc_diff_vs_max": -0.014
+      },
+      "zebralogic_grid": {
+        "accuracy": 0.106,
+        "mean_rt": 3946.2,
+        "mean_cost_usd": 0.001177,
+        "mean_latency_ms": 40628.0,
+        "token_reduction_vs_max": 0.2935,
+        "acc_diff_vs_max": -0.012
+      },
+      "aime": {
+        "accuracy": 0.967,
+        "mean_rt": 8262.3,
+        "mean_cost_usd": 0.002332,
+        "mean_latency_ms": 84309.8,
+        "token_reduction_vs_max": 0.5303,
+        "acc_diff_vs_max": 0.0
+      },
+      "gpqa_diamond": {
+        "accuracy": 0.296,
+        "mean_rt": 11726.0,
+        "mean_cost_usd": 0.003305,
+        "mean_latency_ms": 347878.6,
+        "token_reduction_vs_max": 0.5168,
+        "acc_diff_vs_max": -0.002
+      },
+      "livecodebench": {
+        "accuracy": 0.368,
+        "mean_rt": 4320.3,
+        "mean_cost_usd": 0.001331,
+        "mean_latency_ms": 42239.8,
+        "token_reduction_vs_max": 0.6852,
+        "acc_diff_vs_max": -0.004
+      }
+    },
+    "always_high": {
+      "math500": {
+        "accuracy": 0.836,
+        "mean_rt": 890.2,
+        "mean_cost_usd": 0.000274,
+        "mean_latency_ms": 8583.2,
+        "token_reduction_vs_max": 0.4681,
+        "acc_diff_vs_max": 0.04
+      },
+      "easy2hard_amc": {
+        "accuracy": 0.782,
+        "mean_rt": 6410.4,
+        "mean_cost_usd": 0.001824,
+        "mean_latency_ms": 86269.2,
+        "token_reduction_vs_max": 0.3603,
+        "acc_diff_vs_max": 0.018
+      },
+      "zebralogic_grid": {
+        "accuracy": 0.144,
+        "mean_rt": 5735.8,
+        "mean_cost_usd": 0.001689,
+        "mean_latency_ms": 61306.2,
+        "token_reduction_vs_max": -0.0268,
+        "acc_diff_vs_max": 0.026
+      },
+      "aime": {
+        "accuracy": 0.947,
+        "mean_rt": 11657.6,
+        "mean_cost_usd": 0.003294,
+        "mean_latency_ms": 114956.0,
+        "token_reduction_vs_max": 0.3373,
+        "acc_diff_vs_max": -0.02
+      },
+      "gpqa_diamond": {
+        "accuracy": 0.254,
+        "mean_rt": 15771.1,
+        "mean_cost_usd": 0.004449,
+        "mean_latency_ms": 420023.5,
+        "token_reduction_vs_max": 0.3501,
+        "acc_diff_vs_max": -0.044
+      },
+      "livecodebench": {
+        "accuracy": 0.358,
+        "mean_rt": 19620.8,
+        "mean_cost_usd": 0.005615,
+        "mean_latency_ms": 197146.1,
+        "token_reduction_vs_max": -0.4299,
+        "acc_diff_vs_max": -0.014
+      }
+    },
+    "always_max": {
+      "math500": {
+        "accuracy": 0.796,
+        "mean_rt": 1673.7,
+        "mean_cost_usd": 0.000495,
+        "mean_latency_ms": 16560.9,
+        "token_reduction_vs_max": 0.0,
+        "acc_diff_vs_max": 0.0
+      },
+      "easy2hard_amc": {
+        "accuracy": 0.764,
+        "mean_rt": 10020.3,
+        "mean_cost_usd": 0.002837,
+        "mean_latency_ms": 106920.6,
+        "token_reduction_vs_max": 0.0,
+        "acc_diff_vs_max": 0.0
+      },
+      "zebralogic_grid": {
+        "accuracy": 0.118,
+        "mean_rt": 5585.9,
+        "mean_cost_usd": 0.001649,
+        "mean_latency_ms": 57420.7,
+        "token_reduction_vs_max": 0.0,
+        "acc_diff_vs_max": 0.0
+      },
+      "aime": {
+        "accuracy": 0.967,
+        "mean_rt": 17590.9,
+        "mean_cost_usd": 0.004957,
+        "mean_latency_ms": 185371.1,
+        "token_reduction_vs_max": 0.0,
+        "acc_diff_vs_max": 0.0
+      },
+      "gpqa_diamond": {
+        "accuracy": 0.298,
+        "mean_rt": 24268.8,
+        "mean_cost_usd": 0.00683,
+        "mean_latency_ms": 365239.5,
+        "token_reduction_vs_max": 0.0,
+        "acc_diff_vs_max": 0.0
+      },
+      "livecodebench": {
+        "accuracy": 0.372,
+        "mean_rt": 13721.8,
+        "mean_cost_usd": 0.003973,
+        "mean_latency_ms": 141942.5,
+        "token_reduction_vs_max": 0.0,
+        "acc_diff_vs_max": 0.0
+      }
+    },
+    "stratum_router": {
+      "math500": {
+        "accuracy": 0.824,
+        "mean_rt": 808.3,
+        "mean_cost_usd": 0.000247,
+        "mean_latency_ms": 7923.0,
+        "token_reduction_vs_max": 0.5171,
+        "acc_diff_vs_max": 0.028,
+        "diff_vs_max": 0.028,
+        "diff_vs_max_ci_lo": 0.006,
+        "diff_vs_high": -0.012,
+        "diff_vs_high_ci_lo": -0.032
+      },
+      "easy2hard_amc": {
+        "accuracy": 0.776,
+        "mean_rt": 6175.6,
+        "mean_cost_usd": 0.001754,
+        "mean_latency_ms": 69475.8,
+        "token_reduction_vs_max": 0.3837,
+        "acc_diff_vs_max": 0.012,
+        "diff_vs_max": 0.012,
+        "diff_vs_max_ci_lo": -0.006,
+        "diff_vs_high": -0.006,
+        "diff_vs_high_ci_lo": -0.024
+      },
+      "zebralogic_grid": {
+        "accuracy": 0.146,
+        "mean_rt": 4543.1,
+        "mean_cost_usd": 0.001351,
+        "mean_latency_ms": 46601.2,
+        "token_reduction_vs_max": 0.1867,
+        "acc_diff_vs_max": 0.028,
+        "diff_vs_max": 0.028,
+        "diff_vs_max_ci_lo": 0.01,
+        "diff_vs_high": 0.002,
+        "diff_vs_high_ci_lo": -0.016
+      },
+      "aime": {
+        "accuracy": 0.967,
+        "mean_rt": 8262.3,
+        "mean_cost_usd": 0.002332,
+        "mean_latency_ms": 84309.8,
+        "token_reduction_vs_max": 0.5303,
+        "acc_diff_vs_max": 0.0,
+        "diff_vs_max": 0.0,
+        "diff_vs_max_ci_lo": -0.02,
+        "diff_vs_high": 0.02,
+        "diff_vs_high_ci_lo": -0.013
+      },
+      "gpqa_diamond": {
+        "accuracy": 0.298,
+        "mean_rt": 24268.8,
+        "mean_cost_usd": 0.00683,
+        "mean_latency_ms": 365239.5,
+        "token_reduction_vs_max": 0.0,
+        "acc_diff_vs_max": 0.0,
+        "diff_vs_max": 0.0,
+        "diff_vs_max_ci_lo": 0.0,
+        "diff_vs_high": 0.044,
+        "diff_vs_high_ci_lo": -0.0
+      },
+      "livecodebench": {
+        "accuracy": 0.376,
+        "mean_rt": 9260.7,
+        "mean_cost_usd": 0.002718,
+        "mean_latency_ms": 95872.6,
+        "token_reduction_vs_max": 0.3251,
+        "acc_diff_vs_max": 0.004,
+        "diff_vs_max": 0.004,
+        "diff_vs_max_ci_lo": 0.0,
+        "diff_vs_high": 0.018,
+        "diff_vs_high_ci_lo": 0.002
+      }
+    },
+    "ml_router_cv": {
+      "math500": {
+        "accuracy": 0.82,
+        "mean_rt": 1510.6,
+        "mean_cost_usd": 0.000448,
+        "mean_latency_ms": 14887.5,
+        "token_reduction_vs_max": 0.0974,
+        "acc_diff_vs_max": 0.024
+      },
+      "easy2hard_amc": {
+        "accuracy": 0.754,
+        "mean_rt": 4683.5,
+        "mean_cost_usd": 0.001334,
+        "mean_latency_ms": 50608.3,
+        "token_reduction_vs_max": 0.5326,
+        "acc_diff_vs_max": -0.01
+      },
+      "zebralogic_grid": {
+        "accuracy": 0.124,
+        "mean_rt": 4096.9,
+        "mean_cost_usd": 0.001225,
+        "mean_latency_ms": 42323.9,
+        "token_reduction_vs_max": 0.2666,
+        "acc_diff_vs_max": 0.006
+      },
+      "aime": {
+        "accuracy": 0.967,
+        "mean_rt": 8582.7,
+        "mean_cost_usd": 0.002424,
+        "mean_latency_ms": 87199.1,
+        "token_reduction_vs_max": 0.5121,
+        "acc_diff_vs_max": 0.0
+      },
+      "gpqa_diamond": {
+        "accuracy": 0.26,
+        "mean_rt": 18047.4,
+        "mean_cost_usd": 0.005086,
+        "mean_latency_ms": 334518.5,
+        "token_reduction_vs_max": 0.2564,
+        "acc_diff_vs_max": -0.038
+      },
+      "livecodebench": {
+        "accuracy": 0.368,
+        "mean_rt": 4347.9,
+        "mean_cost_usd": 0.001339,
+        "mean_latency_ms": 42527.1,
+        "token_reduction_vs_max": 0.6831,
+        "acc_diff_vs_max": -0.004
+      }
+    },
+    "ml_router_lodo": {
+      "math500": {
+        "accuracy": 0.796,
+        "mean_rt": 1673.7,
+        "mean_cost_usd": 0.000495,
+        "mean_latency_ms": 16560.9,
+        "token_reduction_vs_max": 0.0,
+        "acc_diff_vs_max": 0.0,
+        "diff_vs_max": 0.0,
+        "diff_vs_max_ci_lo": 0.0,
+        "diff_vs_high": -0.04,
+        "diff_vs_high_ci_lo": -0.07
+      },
+      "easy2hard_amc": {
+        "accuracy": 0.752,
+        "mean_rt": 4562.1,
+        "mean_cost_usd": 0.001296,
+        "mean_latency_ms": 49445.4,
+        "token_reduction_vs_max": 0.5447,
+        "acc_diff_vs_max": -0.012,
+        "diff_vs_max": -0.012,
+        "diff_vs_max_ci_lo": -0.046,
+        "diff_vs_high": -0.03,
+        "diff_vs_high_ci_lo": -0.056
+      },
+      "zebralogic_grid": {
+        "accuracy": 0.128,
+        "mean_rt": 5496.0,
+        "mean_cost_usd": 0.001623,
+        "mean_latency_ms": 56553.7,
+        "token_reduction_vs_max": 0.0161,
+        "acc_diff_vs_max": 0.01,
+        "diff_vs_max": 0.01,
+        "diff_vs_max_ci_lo": 0.002,
+        "diff_vs_high": -0.016,
+        "diff_vs_high_ci_lo": -0.034
+      },
+      "aime": {
+        "accuracy": 0.967,
+        "mean_rt": 16736.9,
+        "mean_cost_usd": 0.004717,
+        "mean_latency_ms": 176153.8,
+        "token_reduction_vs_max": 0.0485,
+        "acc_diff_vs_max": 0.0,
+        "diff_vs_max": 0.0,
+        "diff_vs_max_ci_lo": 0.0,
+        "diff_vs_high": 0.02,
+        "diff_vs_high_ci_lo": 0.0
+      },
+      "gpqa_diamond": {
+        "accuracy": 0.258,
+        "mean_rt": 15884.2,
+        "mean_cost_usd": 0.004481,
+        "mean_latency_ms": 421447.5,
+        "token_reduction_vs_max": 0.3455,
+        "acc_diff_vs_max": -0.04,
+        "diff_vs_max": -0.04,
+        "diff_vs_max_ci_lo": -0.086,
+        "diff_vs_high": 0.004,
+        "diff_vs_high_ci_lo": 0.0
+      },
+      "livecodebench": {
+        "accuracy": 0.368,
+        "mean_rt": 4320.3,
+        "mean_cost_usd": 0.001331,
+        "mean_latency_ms": 42239.8,
+        "token_reduction_vs_max": 0.6852,
+        "acc_diff_vs_max": -0.004,
+        "diff_vs_max": -0.004,
+        "diff_vs_max_ci_lo": -0.016,
+        "diff_vs_high": 0.01,
+        "diff_vs_high_ci_lo": -0.004
+      }
+    },
+    "oracle": {
+      "math500": {
+        "accuracy": 0.824,
+        "mean_rt": 826.1,
+        "mean_cost_usd": 0.000245,
+        "mean_latency_ms": 8059.1,
+        "token_reduction_vs_max": 0.5064,
+        "acc_diff_vs_max": 0.028
+      },
+      "easy2hard_amc": {
+        "accuracy": 0.772,
+        "mean_rt": 4606.3,
+        "mean_cost_usd": 0.001308,
+        "mean_latency_ms": 47107.9,
+        "token_reduction_vs_max": 0.5403,
+        "acc_diff_vs_max": 0.008
+      },
+      "zebralogic_grid": {
+        "accuracy": 0.132,
+        "mean_rt": 3997.2,
+        "mean_cost_usd": 0.001192,
+        "mean_latency_ms": 41135.2,
+        "token_reduction_vs_max": 0.2844,
+        "acc_diff_vs_max": 0.014
+      },
+      "aime": {
+        "accuracy": 0.973,
+        "mean_rt": 8747.6,
+        "mean_cost_usd": 0.002469,
+        "mean_latency_ms": 88785.0,
+        "token_reduction_vs_max": 0.5027,
+        "acc_diff_vs_max": 0.006
+      },
+      "gpqa_diamond": {
+        "accuracy": 0.342,
+        "mean_rt": 13246.7,
+        "mean_cost_usd": 0.003732,
+        "mean_latency_ms": 435324.4,
+        "token_reduction_vs_max": 0.4542,
+        "acc_diff_vs_max": 0.044
+      },
+      "livecodebench": {
+        "accuracy": 0.368,
+        "mean_rt": 4320.3,
+        "mean_cost_usd": 0.001331,
+        "mean_latency_ms": 42239.8,
+        "token_reduction_vs_max": 0.6852,
+        "acc_diff_vs_max": -0.004
+      }
+    }
+  },
+  "oracle": {
+    "accuracy": 0.515,
+    "total_reasoning_tokens": 2962117.0,
+    "total_cost_usd": 0.85489,
+    "savings": {
+      "vs_always_high": {
+        "token_reduction": 0.4295,
+        "cost_reduction": 0.4239,
+        "accuracy_delta": 0.013
+      },
+      "vs_always_max": {
+        "token_reduction": 0.5108,
+        "cost_reduction": 0.5051,
+        "accuracy_delta": 0.017
+      }
+    }
+  }
+}

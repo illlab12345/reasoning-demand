@@ -1,0 +1,11 @@
+{
+  "run_id": "20260812T224346-1e781b",
+  "stage": "pilot",
+  "planned_requests": 1134,
+  "per_run_path": "results\\metrics\\20260812T224346-1e781b.jsonl",
+  "executed": 324,
+  "skipped_cached": 810,
+  "failed": 0,
+  "completed": 1134,
+  "finished_at": "2026-08-12T23:57:12.965813+00:00"
+}

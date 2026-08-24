@@ -1,0 +1,75 @@
+{
+  "epsilon": 0.03,
+  "rule": {
+    "aime|1": "low",
+    "easy2hard_amc|1": "high",
+    "easy2hard_amc|2": "high",
+    "easy2hard_amc|3": "high",
+    "easy2hard_amc|4": "high",
+    "easy2hard_amc|5": "low",
+    "gpqa_diamond|1": "low",
+    "livecodebench|easy": "low",
+    "livecodebench|hard": "max",
+    "livecodebench|medium": "low",
+    "math500|1": "high",
+    "math500|2": "high",
+    "math500|3": "high",
+    "math500|4": "low",
+    "math500|5": "low",
+    "zebralogic_grid|1": "high",
+    "zebralogic_grid|2": "high",
+    "zebralogic_grid|3": "low",
+    "zebralogic_grid|4": "max",
+    "zebralogic_grid|5": "low"
+  },
+  "dev_evaluation_rule_v2": {
+    "vs_high": {
+      "accuracy": 0.513,
+      "mean_rt": 6484.6,
+      "diff_vs_high": 0.011,
+      "diff_vs_high_ci_lo": 0.002
+    },
+    "vs_max": {
+      "accuracy": 0.513,
+      "mean_rt": 6484.6,
+      "diff_vs_max": 0.015,
+      "diff_vs_max_ci_lo": 0.006
+    }
+  },
+  "dev_evaluation_ml_cv": {
+    "vs_high": {
+      "accuracy": 0.495,
+      "mean_rt": 6570.8,
+      "diff_vs_high": -0.006,
+      "diff_vs_high_ci_lo": -0.012
+    },
+    "vs_max": {
+      "accuracy": 0.495,
+      "mean_rt": 6570.8,
+      "diff_vs_max": -0.003,
+      "diff_vs_max_ci_lo": -0.012
+    }
+  },
+  "rule_changes_vs_v1": {
+    "easy2hard_amc|1": [
+      "max",
+      "high"
+    ],
+    "easy2hard_amc|3": [
+      "max",
+      "high"
+    ],
+    "easy2hard_amc|4": [
+      "low",
+      "high"
+    ],
+    "gpqa_diamond|1": [
+      "max",
+      "low"
+    ],
+    "math500|3": [
+      "max",
+      "high"
+    ]
+  }
+}

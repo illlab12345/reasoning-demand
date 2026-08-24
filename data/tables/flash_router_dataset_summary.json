@@ -1,0 +1,21 @@
+{
+  "n_samples": 530,
+  "by_dataset": {
+    "easy2hard_amc": 100,
+    "gpqa_diamond": 100,
+    "livecodebench": 100,
+    "math500": 100,
+    "zebralogic_grid": 100,
+    "aime": 30
+  },
+  "label_distribution": {
+    "low": 308,
+    "high": 177,
+    "max": 45
+  },
+  "best_setting_distribution": {
+    "low": 308,
+    "high": 177,
+    "max": 45
+  }
+}
