@@ -39,18 +39,62 @@ Full provenance, revision hashes and licenses: [docs/DATASETS.md](docs/DATASETS.
 Synthetic mechanism and prospective item sets are generated from fixed seeds by
 the setup scripts in `code/scripts/` and therefore also need no shipping data.
 
-## Key results (all numbers in the manuscript come from `data/tables/`)
+## Key results
 
-| Result | Value | File |
+All numbers below are taken from `data/tables/*.json`; the file that backs each
+table is listed in `data/README.md`. Figures 1–3 (SVG/PDF/PNG) are in
+`data/figures/`.
+
+### Benchmark overview (development set, flash model, ε = 3 pp)
+
+| Benchmark | n | Accuracy low / high / max | r\*\_ε | ARR vs max |
+| --- | ---: | --- | --- | ---: |
+| MATH-500 | 100 | 81.0% / 83.6% / 79.6% | `low` | 50.6% |
+| E2H-AMC | 100 | 75.0% / 78.2% / 76.4% | `high` | 36.0% |
+| AIME 2024 | 30 | 96.7% / 94.7% / 96.7% | `low` | 53.0% |
+| LiveCodeBench | 100 | 36.8% / 35.8% / 37.2% | `low` (easy/med), `max` (hard) | 68.5% |
+| ZebraLogic grid | 100 | 10.6% / 14.4% / 11.8% | `max` (floor noise) | ≈0% |
+| GPQA Diamond | 100 | 29.6% / 25.4% / 29.8% | `low` (floor control) | 51.7%† |
+
+† Token-side only; near-chance accuracy at every setting.
+
+### Structural controls (synthetic task families)
+
+| Dimension | Sufficient setting r\*\_ε | Evidence |
 | --- | --- | --- |
-| Prospective pooled accuracy difference vs always-`high` | 0.0 pp (one-sided 95% lower bound −1.3 pp ≥ −3 pp) | `data/tables/prospective_validation.json` |
-| Prospective token saving vs always-`high` | 31.9% (294/300 items identical) | `data/tables/prospective_validation.json` |
-| Development rule vs always-`high` | +1.1 pp, tokens −33.7% | `data/tables/dev_router_v3.json` |
-| Benchmark-level available token reduction (ARR) vs always-`max` | 36.0–68.5% (floor benchmarks excluded) | `data/tables/paper_tables.json`, `stratum_demand.json` |
-| Structural positive controls | constraint density and search width shift r\*\_ε `low`→`high` | `data/tables/mechanism_summary.json`, `searchwidth_mid.json` |
-| Structural negative controls | depth / distractor / state-tracking load scale tokens but not r\*\_ε | `data/tables/mechanism_summary.json`, `statetrack_mid.json` |
+| Constraint density (clues 4/8/12) | moves `low` → `high` at 12 clues | `data/tables/mechanism_summary.json` |
+| Search width (B = 2/4/8) | moves `low` → `high` at B = 8 | `data/tables/searchwidth_mid.json` |
+| Sequential depth (8/16/24) | no shift (expenditure only: 315 → 909 → 1,853 tokens) | `data/tables/mechanism_summary.json` |
+| Distractor load (0/2/4) | no shift (weak expenditure effect) | `data/tables/mechanism_summary.json` |
+| State-tracking load (k = 2/4/8) | no shift (expenditure only: 591 → 1,404 → 2,793 tokens) | `data/tables/statetrack_mid.json` |
 
-Figures 1–3 (SVG/PDF/PNG): `data/figures/`.
+### Prospective validation (300 unseen problems, frozen policy, 3 repetitions)
+
+| Family | n | ΔAcc (router − high) | One-sided 95% CI lower | Token saving | Identical / better / worse |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| MATH-500 | 100 | −2.0 pp | −4.0 pp | −0.4% | 98 / 0 / 2 |
+| E2H-AMC | 100 | −1.0 pp | −3.0 pp | 13.5% | 99 / 0 / 1 |
+| ZebraLogic | 50 | +2.0 pp | 0.0 pp | 18.5% | 49 / 1 / 0 |
+| LiveCodeBench | 50 | +4.0 pp | 0.0 pp | 49.7% | 48 / 2 / 0 |
+| **Pooled** | **300** | **0.0 pp** | **−1.3 pp** | **31.9%** | **294 / 3 / 3** |
+
+### Small-sample calibration protocol (stratum-level, safe default)
+
+Pass rate / median token saving over 200 calibration draws, as reported in the
+manuscript (Supplementary Table 1); exact per-draw values:
+`data/tables/calibration_simulation.json`.
+
+| Family | K = 10 | K = 20 | K = 30 |
+| --- | --- | --- | --- |
+| LiveCodeBench | 100% / 77.7% | 100% / 56.8% | 100% / 59.8% |
+| GPQA Diamond | 100% / 24.1% | 99% / 24.6% | 96% / 25.1% |
+| AIME | 100% / 29.0% | 67%† / 29.4% | — |
+| MATH-500 | 91% / 0% | 95% / 0% | 96% / 0% |
+| E2H-AMC | 36% / 18.5% | 52% / 14.9% | 62% / 13.4% |
+| ZebraLogic | 17% / 29.2% | 42% / 21.1% | 57% / 20.5% |
+
+† K = 20 leaves only 10 holdout items; the low pass rate reflects
+certification power rather than calibration failure.
 
 ## Reproduction
 

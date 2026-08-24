@@ -1,0 +1,31 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependencies
+        run: pip install -r code/requirements.txt
+      - name: Compile all sources
+        run: python -m compileall -q code
+      - name: Run data-independent unit tests
+        run: >
+          python -m pytest
+          code/tests/test_adapters.py
+          code/tests/test_evaluators.py
+          code/tests/test_extension_evaluators.py
+          code/tests/test_zebra_grid_evaluator.py
+          code/tests/test_loaders_jsonable.py
+          code/tests/test_protocol_config.py
+          code/tests/test_schema.py
+          code/tests/test_p1_searchwidth.py
+          -q
