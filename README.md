@@ -82,7 +82,7 @@ python code/scripts/dataset_stats.py
 python -m pytest code/tests -q
 ```
 
-Tests that read downloaded data are skipped until steps 2 is completed.
+Tests that read downloaded data require step 2 to be completed first.
 
 ### 4. Re-run experiments (requires API budget)
 
